@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Notes from './components/notes';
+import Note from './components/note';
 
 ReactDOM.render(
-	<Notes />,
+	<Note />,
 	document.getElementById('root')
 );
