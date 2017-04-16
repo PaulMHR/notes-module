@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Note from './components/note';
+import SubjectNotes from './components/subjectNotes';
 
 ReactDOM.render(
-	<Note />,
+	<SubjectNotes subject="ENGL 200A" />,
 	document.getElementById('root')
 );
