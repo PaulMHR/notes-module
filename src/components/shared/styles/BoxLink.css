@@ -1,0 +1,12 @@
+.box_link_outer {
+    /* to be adjusted once scaled */
+    width: 100px;
+    height: 50px;
+    border: solid black;
+}
+
+.box_link_inner {
+    position: relative;
+    right: -24px;
+    bottom: -16px;
+}

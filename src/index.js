@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import firebase from 'firebase';
-import MainRoute from './mainRoute';
+import MainRoute from './route';
 
 // Initialize Firebase
 const config = {
