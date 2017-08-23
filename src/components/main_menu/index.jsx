@@ -7,6 +7,8 @@ import "../../common.css"
 export default () => (
     <div className="view_div">
         <p>Welcome to Notorious!</p>
-        <BoxLink link="/note/CS241" linkText="CS 241"/>
+        <div className="box_links">
+            <BoxLink courseId="CS241" courseTitle="Foundations of Sequential Programs"/>
+        </div>
     </div>
 );
