@@ -1,10 +1,10 @@
 import React from 'react';
-import NoteHeader from './noteTitle';
-import NoteBody from './noteBody';
+import Note from './note_content/index';
+import NotesHeader from './note_header/notesHeader';
 
-export default () => (
-	<div>
-		<NoteHeader title="Test" date="September 6th, 2016" />
-		<NoteBody content="React Rules!" />
-	</div>
+export default ({match}) => (
+    <div>
+        <NotesHeader subject={match.params.courseId} />
+        <Note />
+    </div>
 );
