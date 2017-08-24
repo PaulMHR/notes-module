@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import firebase from 'firebase';
-import MainRoute from './route';
+import MainPage from './main';
 
 // Initialize Firebase
 const config = {
@@ -15,6 +15,6 @@ const config = {
 firebase.initializeApp(config);
 
 ReactDOM.render(
-	<MainRoute />,
+	<MainPage />,
     document.getElementById('root')
 );
