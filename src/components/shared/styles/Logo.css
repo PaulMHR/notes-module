@@ -5,10 +5,14 @@
     border-radius: 5px;
     text-align: center;
     text-decoration: none;
+    background-color: antiquewhite;
+}
+
+.logo_div:hover {
+    background-color: white;
 }
 
 .logo {
-    font-family: sans-serif;
     font-size: larger;
     margin: 4px 0 0 0;
     color: black;

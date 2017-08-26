@@ -1,8 +1,18 @@
 .route_div {
-    min-width: 500px;
+    min-width: 750px;
 }
 
 .view_div {
     text-align: center;
-    padding: 0 20px;
+    margin: 0 100px;
+    padding: 10px 0;
+    background-color: whitesmoke;
+}
+
+h1, h2, h3, h4, p {
+    font-family: "Calisto MT", serif;
+}
+
+hr {
+    width: 200px;
 }
