@@ -3,7 +3,7 @@ import React from 'react';
 import BoxLink from '../shared/BoxLink'
 
 import "../../common.css"
-import "./styles/main_menu.css"
+import "./styles/MainMenu.css"
 
 export default () => (
     <div className="view_div">

@@ -1,0 +1,20 @@
+.note_title_list {
+    display: flex;
+    list-style: none;
+    border: 1px solid lightgray;
+    border-radius: 2px;
+}
+
+.note_title_list li {
+    min-width: 75px;
+}
+
+.note_title_name {
+    font-size: large;
+}
+
+.note_title_date {
+    padding-left: 5%;
+    padding-top: 2px;
+    width: inherit;
+}

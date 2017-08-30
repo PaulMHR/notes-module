@@ -1,6 +1,6 @@
 import React from 'react';
-import NoteHeader from './noteTitle';
-import NoteBody from './noteBody';
+import NoteHeader from './NoteTitle';
+import NoteBody from './NoteBody';
 
 export default () => (
 	<div>
