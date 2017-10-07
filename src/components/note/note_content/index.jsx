@@ -2,9 +2,9 @@ import React from 'react';
 import NoteHeader from './NoteTitle';
 import NoteBody from './NoteBody';
 
-export default () => (
+export default ({title, unit_content}) => (
 	<div>
-		<NoteHeader title="Test" date="September 6th, 2016" />
-		<NoteBody />
+		<NoteHeader title={title} />
+		<NoteBody first_unit_note={unit_content.notes[0]} />
 	</div>
 );

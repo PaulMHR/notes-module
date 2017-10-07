@@ -17,9 +17,7 @@ const config = {
 };
 
 firebase.initializeApp(config);
-let storage = firebase.storage();
-
-console.log(storage);
+//let storage = firebase.storage();
 
 // Initialize Redux Store
 const store = createStore(reducer);
