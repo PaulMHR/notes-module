@@ -72,6 +72,42 @@ let engl251b = {
                 ]
             }]
         },
+        'The Sign & the Sign-System': {
+            module_number: 3,
+            notes: [{
+                date: null,
+                content: [
+                    'Paul de Man claims that literary theory go underway when we started to use linguistic terminology when talking about literature, especially synchronic linguistics, as opposed to historic linguistics. The basic unity to this theory is the sign and the sign-system.',
+                    'Why the fuss about linguistics? Because it had a big impact on the work of literary critics, and in general, this shift hugely impacts not only how we think of literature and language, but all species of study. This formed Structuralism, which clerkly dominated literary theory ever since — and it all came from one guy: Ferdinand de Saussure.',
+                    'Saussure was moved to thing of the philosophy of linguistics, because he was so dissatisfied with current terminology in philology, the linguistics of his days. He was convinced that words were composed of something more than just sounds — since words of a language weren’t just sounds, they were meaningful sounds, and no current Philologist had a solid understanding of where the meaning came from. Saussure was convinced that this meaning could only come from sounds in a language system.',
+                    'So, what counts in a language isn’t just sounds, but contrasts and organizations of sounds. Humans can make a large variety of sounds, but not all will count as meaningful in a given language. We should note that within speakers of the same language, there are many differences in pronunciation — in effect, the same “word” could be composed of entirely different sounds. What matters, then, isn\'t sound, but contrasts of sounds. As Saussure said, “in language, there are only differences.”',
+                    'When we acquire language, we learn that system of contrast, not the historical background of words. So, the system is synchronic. Also note that this means that, as meaning is generated from ‘differences’ of sound, so goo are meanings composed of contrasts of smaller meanings. Just as every language organizes sounds in its own way, every language organizes meanings in its own way. Think of how English lacks the plural/formal second personal pronoun, which other European languages how (i.e. vous in French). To make up for it, we’ve invented “y’all” in slang! Which is quite funny, because “you” originally was the plural second-person pronoun! All in all, the basic unit of meaning is defined in relation to other sounds, and that meaning is shifting all the time.',
+                    'Saussure saw his Philology as so insufficient that he himself made terminologies for what he saw as the fundamental units of language. A sign was the union of the sound-pattern and the meaning — a meaningful unit of language. He called the sound-pattern the Signifier, and the meaning/concept the Signified. By this, he hoped to expand this system beyond language, but to all things which, in some way, contain meaning.',
+                    'Then the meaning of signs is forged through convention — green means go because we’ve all said it means go. So the language system is ‘social’ and is held together by nothing but our collective agreement. Yes, they change continually, but no one person can make them change.',
+                    'This system in is the background — what we actually encounter is sentences, which string together meanings that make sense together. He called the actual sentences of speech Parole and the language system itself Langue. He called these strings of signs Syntagmata, or Syntagm singular. Syntagmata don’t have to be sentences: “dogs” is a syntagm, since it strings together “dog” and “s” to pluralize.',
+                    'Associative Relations are the relations between a particular sign and the other signs we can compare it to. Like how “anti-drugs” relates to “anti-Communist” and “anti-immigration” tells us that “anti-“ means “against”. This is part of how language changes.\n',
+                    'Sometimes the sound drifts and not the meaning. Example: “undecem”, the Latin word for eleven (derived from “un” meaning “one”, and “decem” meaning “ten"), drifted to “onze” in French for the same concept. This shifted the term from being relatively arbitrary to completely arbitrary. Sometimes we fit foreign words to suit syntagms that we’re familiar with. This demonstrates that the history doesn’t matter, and it’s only the system that determines the meaning. This broadened to become the field of Structuralism. Tools:',
+                    'Sign — Signifier/Signified: the units of a system are signs. A sign is defined its place in the system. It is made up of two parts: a signifier and the signified. A signifier can be a written pattern, a combination of graphic symbols, or a sound pattern. The signified is the meaning that is bound to the pattern.',
+                    'Synchronic - Diachronic: the language system is synchronic, it exists at a moment in time: it is meant to represent what we know when we use language, and in this respect it is different from the history of a language, its diachronic aspect, which is interesting, but irrelevant.',
+                    'Syntagmatic - Paradigmatic (Associative): When we encounter language it takes the form of syntagmata, liner strings of signs like sentences. The elements of the syntagm are defined as associative relations, which we will call paradigmatic relations.'
+                ]
+            }]
+        },
+        'Structuralist Analysis I': {
+            module_number: 4,
+            notes: [{
+                date: null,
+                content: [
+                    'Let’s turn to the study of folklore in Russia. Towards the 20th century, this study became more intense and focussed mostly on historical analyses of folktales — but Vladmir Propp was having none of it. In “The Morphology of the Folktale”, he analyzed hundreds of folktales to argue that they were all telling, more or less, the same story.',
+                    'He argued that each action in the narrative could be embodied in several different ways. So though the structure of the story remained constant, its particular implementation varied. He called the fundamental units of this structure functions: “the act of a character, defined from the point of view of its significance for the course of the action.”',
+                    'Thus, the character’s actions didn’t have inherent meaning, but had meaning because of its role in the system of narrative. This also means that stories are composed of functions, not characters. It was only when Claude Levi-Strauss and Roland Barthes noticed the similarity between Propp and Saussure that we finally got Structuralist Analysis. Woo!',
+                    'Barthes argues that narrative events/characters have meaning by virtue of their place in a system.',
+                    'A function is an event with consequences for the progress of the narrative. The most high- consequence ones among these are cardinal functions, whereas those that don’t have an impact on the narrative, usually left there for realism, are catalyzers. We call strings of functions sequences.',
+                    'Not everything is a function, though. There are also indices which relate to a higher level in the text (e.g. telling us more about a character or an event). These are categorized into true indices which tell us things of consequence, and informants which are of no real consequence.',
+                    
+                ]
+            }]
+        },
         'Generic Unit': {
             module_number: -1,
             notes: [{
