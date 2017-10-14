@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "firebase": "^4.3.0",
+    "md-to-react": "^0.2.1",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
     "react-redux": "^5.0.6",
