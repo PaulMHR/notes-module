@@ -279,9 +279,38 @@
       "taken" : "Spring Term 2017, 3B"
     },
     "CS 241" : {
+      "course_content_by_units" : {
+        "Introduction" : {
+          "09-07-2016" : [
+            "h2. Course Info",
+            "* Website: student.cs.uwaterloo.ca/~cs241",
+            "** read EVERYTHING!!!! Esp. syllabus",
+            "* 10 assignments, 2 weeks now until assignment. After that, 1week/assignment. ",
+            "** Get ahead! You don't need 2 weeks to do assignment 1.",
+            "** Each assignment has 9 subparts.",
+            "** Due Thursday at 7PM.",
+            "* DL Troy's lecture slides.",
+            "* No annotated versions of these slides available. Consider printing them out and writing them out. ",
+            "* Marmoset is a small monkey. It looks at your program and it says, 'no!' Two types of tests: public tests and release tests. No secret tests.",
+            "* Almost no marking for style.",
+            "* Even if you've used up all release tokens, all tests will still be run on test. ",
+            "* Don't use marmoset like a compiler, or a testing program. Don't anger the monkey.",
+            "* Your program will be run on the linux.student.cs environment. Use linux tools like vim. ",
+            "* Marking: Assignments 25 / Midterm 25 / final 50. Assignments 2.5% each. Must pass weighted exam average to pass.",
+            "* Office hours are listed on course page. Attend them!",
+            "* Excessive Collaboration! Don't do it!",
+            "** do your own work! Make sure you could say, 'yeah, I did this myself' to your mom.",
+            "** don't give your work to others",
+            "** do not write down anthing when discussing",
+            "* No textbooks for this course. Optional texts in DC library. Other reference materials in course site that you should read beforehand.",
+            "* Don't post first -- search and read first!"
+          ]
+        }
+      },
       "course_name" : "CS 241",
       "is_online" : "False",
-      "taken" : "Fall Term 2016, 3A"
+      "taken" : "Fall Term 2016, 3A",
+      "instructor" : "Troy Vasiga"
     }
   }
 }
