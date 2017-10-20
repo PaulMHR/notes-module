@@ -20,7 +20,7 @@ firebase.initializeApp(config);
 //let storage = firebase.storage();
 let hello_ref = firebase.database().ref('notes');
 hello_ref.on("value", function(snapshot){
-    console.log(snapshot.val());
+    //console.log(snapshot.val());
 });
 
 // Initialize Redux Store

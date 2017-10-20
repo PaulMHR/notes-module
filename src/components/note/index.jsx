@@ -17,10 +17,12 @@ class NoteIndex extends React.Component {
     componentWillMount() {
         firebase.database().ref('notes').on("value", snapshot => {
             let snapshot_val = snapshot.val();
-            let snapshot_key = Object.keys(snapshot_val)[0];
-            if (snapshot_key === this.state.subject) {
-                console.log('a');
-                this.setState({...this.state, course_content_by_units: snapshot_val[snapshot_key]["course_content_by_units"]})
+            let snapshot_keys = Object.keys(snapshot_val);
+            for (let i = 0; i < snapshot_keys.length; i++) {
+                if (snapshot_keys[i] === this.state.subject) {
+                    console.log('a');
+                    this.setState({...this.state, course_content_by_units: snapshot_val[snapshot_keys[i]]["course_content_by_units"]});
+                }
             }
         });
         console.log('b');

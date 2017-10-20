@@ -7,8 +7,8 @@
   "notes" : {
     "ENGL 251B" : {
       "course_content_by_units" : {
-        "2 What is Literature?" : {
-          "null" : [
+        "2 What is Literature?": {
+          "null": [
             "What makes something a piece of literature, or what is the nature of being literary? No one knows for sure.",
             "What makes something a piece of literature, while another piece isn’t? All we know is that literature is all complicated in a specific way. So who decides what is literature? Literary scholars, critics and reviewers, and the market all play their role.",
             "Literary arguments concern what works are part of a certain tradition. “The Call of the Wild” by Jack London was part of English Literary Studies in the USSR because of its societal criticism, but wasn’t to be found in American syllabi. Many great disputes of who is and isn’t literary have occurred around John Milton and John Donne. Milton was considered universally praiseworthy until he was attacked by T.S. Elliot. He championed Donne and his conversational style.",
@@ -25,8 +25,8 @@
             "_Literary Theory_: A way of thinking systematically and explicitly about what literature is and the methods we use in analyzing and criticizing it. Modern literary theory has typically been stimulated by importing ideas from other disciplines into the study of literature."
           ]
         },
-        "3 Russian Formalism" : {
-          "null" : [
+        "3 Russian Formalism": {
+          "null": [
             "Recall that the Formalists put the emphasis of literary criticism on _literariness_. Why did this idea only originate with the Russians? In the times of the Formalists, there were giant political pressures that would eventually lead to two revolutions — the first deposing its absolute monarchy, the second installing Communism. So, plenty of people, including artists, called for revolutionary change, and published manifestos. The most popular of these was “A Slap in the Face of Public Taste”, by the Futurists. They expressed discontent with the status quo of poetry and endeavoured to make new poetry out of new words. This was avant-garde art, which intentionally aimed to disrupt the status quo and change people’s world views. This shift even empowered painters to think of paintings less as representations of the world, but more as representations of the power of their own medium.",
             "The Futurists issues a pamphlet called, “The Word as Such”, which called for people to “explore the world” beyond its ordinary meaning. It’s in this context that Victor Shklyovsky made his greatest essays — he shared the Futurists’ zeal for revolution. He shared his own manifesto, “The Resurrection of the Word”, at a Futurist hangout cafe.",
             "In it, Shklyovsky talked much about how language and individual words lost its metaphorical or descriptive quality. If we are to sense the form of words, we have to slow our perception of words — to understand how words mean. He said, “The fate of the works of old artists... is exactly the same as the fate of the word itself. They are completing the journey from poetry to prose.” So, no longer a way to understand language, but to receive meaning.",
@@ -47,8 +47,8 @@
             "Poetic language: how poetry uses language in such a way that distinguishes itself from ordinary speech."
           ]
         },
-        "4 The Sign & the Sign-System" : {
-          "null" : [
+        "4 The Sign & the Sign-System": {
+          "null": [
             "Paul de Man claims that literary theory go underway when we started to use linguistic terminology when talking about literature, especially synchronic linguistics, as opposed to historic linguistics. The basic unity to this theory is the sign and the sign-system.",
             "Why the fuss about linguistics? Because it had a big impact on the work of literary critics, and in general, this shift hugely impacts not only how we think of literature and language, but all species of study. This formed Structuralism, which clerkly dominated literary theory ever since — and it all came from one guy: Ferdinand de Saussure.",
             "Saussure was moved to thing of the philosophy of linguistics, because he was so dissatisfied with current terminology in philology, the linguistics of his days. He was convinced that words were composed of something more than just sounds — since words of a language weren’t just sounds, they were meaningful sounds, and no current Philologist had a solid understanding of where the meaning came from. Saussure was convinced that this meaning could only come from sounds in a language system.",
@@ -64,8 +64,8 @@
             "Syntagmatic - Paradigmatic (Associative): When we encounter language it takes the form of syntagmata, liner strings of signs like sentences. The elements of the syntagm are defined as associative relations, which we will call paradigmatic relations."
           ]
         },
-        "5 Structuralist Analysis I" : {
-          "null" : [
+        "5 Structuralist Analysis I": {
+          "null": [
             "Let’s turn to the study of folklore in Russia. Towards the 20th century, this study became more intense and focussed mostly on historical analyses of folktales — but Vladmir Propp was having none of it. In “The Morphology of the Folktale”, he analyzed hundreds of folktales to argue that they were all telling, more or less, the same story.",
             "He argued that each action in the narrative could be embodied in several different ways. So though the structure of the story remained constant, its particular implementation varied. He called the fundamental units of this structure functions: “the act of a character, defined from the point of view of its significance for the course of the action.”",
             "Thus, the character’s actions didn’t have inherent meaning, but had meaning because of its role in the system of narrative. This also means that stories are composed of functions, not characters. It was only when Claude Levi-Strauss and Roland Barthes noticed the similarity between Propp and Saussure that we finally got Structuralist Analysis. Woo!",
@@ -83,8 +83,8 @@
             "Sequence: the arrangement of functions from beginning to end. May embody a certain action altogether."
           ]
         },
-        "6 Structuralist Analysis II" : {
-          "null" : [
+        "6 Structuralist Analysis II": {
+          "null": [
             "When Saussure build his theory, he aimed to scientifically explain why and how language worked — not to evaluate one language as better than another. He made it a descriptive, not evaluative field.",
             "So, when Structuralism took off, it couldn’t tell you whether one narrative was better than another. Strictly speaking. It can certainly tell you how a narrative works, though.",
             "Think of the narratives in “A Scandal in Bohemia”. We have Watson tell the tale of a disguised Holmes getting injured, going into the house, then Watson throwing a smoke bomb. Holmes re-narrates the events later to clarify that he had gotten injured so as to fool Adler into revealing the location of the photograph. Finally, we have Adler re-narrate all these events again from her letter, where she reveals that she out- deveined Holmes by perceiving his ruse. Each new narrative makes “Scandal” interesting as it unfolds — the narrative meaning of all the events are revealed as time goes on.",
@@ -120,8 +120,8 @@
             "Let’s note: Genette created these concepts because he really wanted to analyze what made a particular novel interesting. But we can use these concepts to understand what makes detective stories possible. Tools for the toolbox listed above."
           ]
         },
-        "7 Deconstructive Criticism" : {
-          "null" : [
+        "7 Deconstructive Criticism": {
+          "null": [
             "Saussure created synchronic linguistics in Switzerland, which Barthes picked up in Egypt, and combined into this wild soup of ideas in Paris. That’s where Jacques Derrida picks it up. He was an immigrant from a French colony, and had trained to be a philosopher. He created Deconstructionism in the 1960’s as a kind of confrontation between Structuralism and philosophy. He critiqued both classes of ideas.",
             "Derrida believed that philosophy had to swallow how Structuralism described the language that allowed for reasoning and argumentation. Philosophy often focussed on removing ambiguity in ideas — if aimed for a perfectly ‘practical’ language which perfectly expressed truth and reasoning.",
             "Structuralism came at thing from a totally different view, but it still had places where Saussure was inconsistent — Derrida thought Saussure’s conceptions were foreclosed upon in his writings to prevent the realization of their radical implications. Derrida coins the term “Differance” to express how the ‘meaning in difference’ was always deferred to further differences to find its real meaning.",
@@ -142,8 +142,8 @@
             "Differance: the instability of language, because all signifiers acquire meaning by virtue of their difference from others, which means their meaning is endlessly deferred; the movement from signifier to signifier never stops."
           ]
         },
-        "8 Writing and Political Commitment" : {
-          "null" : [
+        "8 Writing and Political Commitment": {
+          "null": [
             "Writing and politics have been mixed together since their conceptions. Lysistrata famously brought commentary on gender roles and the Peloponnesian Was onto the Greek stage. The works of Shakespeare, too, have obsessively recorded the goings-on of court life which “deconsecrated” the English monarchy in effect. As the English Civil War climbed in the beheading of Charles I, the great poets of the time, including John Milton, saw it fit to celebrate Republicanism in their works, whether explicitly or implicitly. This continued into the Romanticists and Victorians.",
             "Yet in the middle of the Victorian Period, Matthew Arnold wrote the pamphlet “Culture and Anarchy” as a response to mass protests to extend suffrage. This climaxed in the protests at Hyde Park in 1867, where the government refused to fire at protestors. Arnold saw this as a big problem — because it seemed like mobs could now get away with doing whatever they wanted without any “authority, to counteract the tendency to anarchy.” So, he argued, the new source of authority in British society should be culture, which inherently unites people, and seeks human perfection.",
             "So Arnold argued that the point of literature was to seek an inward human perfection, and not to be caught up with the affairs of the external world — i.e. politics. This lead to consciously anti-political criticism in Britain for the next century or so. However, there eventually came a class of writers and critics who argued for social justice as a part of human perfection.",
@@ -160,8 +160,8 @@
             "This had the lasting consequence of eliminating the authorial intent from being the decisive factor in deciding the meaning of a work."
           ]
         },
-        "9 Marxist Literary Theory" : {
-          "null" : [
+        "9 Marxist Literary Theory": {
+          "null": [
             "We know that literary theory advanced from outside influences. The first of these influences we’ll cover is Marxism. We’ll introduce Marxism, then see how it’ll apply.",
             "The central ideas behind Marxism are simple. One of the tenants is called “The Social Production of the Existence”: the idea that humans are distinctive from other animals, because not only do they build structures and gather food, but they also produce “means of production” that make shelter-building and food-gathering easier for the next generation. Because of this, our environment is more human-made than the environments of our ancestors. However, humans haven’t necessarily shared the means of production, but have collected it among an elite minority of themselves. This is called “property”.",
             "Different societies thought of property differently. Nomadic cultures posited ownership of some animals. More stationary cultures often allowed grazing on ‘common land’. With agriculture, people started owning land, but this land wasn’t distributed evenly. Some owned land, and others worked for land- owners. In some societies, they worked as slaves or indicted servants. With the invention of industrialization, property begun include money, tools, and factory buildings. Property allows control over these means of production.",
@@ -184,95 +184,95 @@
             "Ideology: the medium in which we become conscious of conflicts within class societies. Ideology covers the whole range of ideas — political, artistic, religious, philosophical. We have ideology whenever an idea functions to disguise the real conflicts of society, or seeks to generate consent to an unfair society.",
             "Hegemony: the process by which one class gains the consent of the populace to their worldview. It is the process of building consent out of the existing ideologies, it assumes that to direct a society you have to tilt or angle people’s beliefs."
           ]
+        },
+        "10 Psychoanalytic Criticism": {
+          "null": [
+            "Sigmund Freud was interested in literature — he often attempted to apply psychoanalysis to literature. We’re going to study a later branch of psychoanalysis which incorporated Structuralism under Lacan.",
+            "Psychoanalysis is both an elaborate theory and method. Freud developed this theory from his experiences with treating individual patients. Among the most famous of this theoretical discoveries is his discovery of the unconscious — his decision to think of the mind not as a single conscious entity, but a conscious and unconscious.",
+            "The content of the unconscious is utterly different from the thoughts of the conscious. Its content is there only because it had to be “buried”. Freud thought of this when treating patients suffering from “neurosis” and “hysteria”. He believed that hysterics “suffer from reminisces” — where at some point in their lives they experienced a strong impulse or wish which had to be buried because of societal standards.",
+            "Freud came up with different techniques to interpreting these symptoms — usually by placing the patient in a place where their repressive nature is weakened.",
+            "Freud radically assured the the Baby had no sense of self — its just a bundle of impulses, a “person- omlette”. He believed that the impulses of an infant’s life are “erotic”, since adult erotic pleasures are derivative of these infantile sensations. Many of these pleasures are directly in association with the mother — so when the father becomes a rival for the child’s affections, the child develops an Oedipal complex. To become a man, the child must give up this complex, and begin forging its own complex. Though necessary, this transition is traumatic, as it forces the developing human to repress these erotic wishes. These repressed wishes constitute the unconscious. Thus, adulthood and adult sexuality is predicated upon the existence of an unconscious.",
+            "All this is kinda far-fetched, right? But keep in mind that Freud was describing more a pattern of development than a process that literally applies to everyone. At some point, the child will encounter prohibition of impulses that forces a child to give up their narcissism and triggers a reorganization of the world.",
+            "In the 50s and 60s, Jacques Lacan introduced psychoanalysis and structuralism to one another. He suggested that the moment of consciousness is also the moment a child acquires language.",
+            "Note that in order for an Oedipal complex to develop, the child must accept that it is one and not the other — that it is like the father, but that it is separate from the father. So, it has to abstract itself as a class of humans. This requires language.",
+            "Lacan said this is “the entry into the symbolic order.”",
+            "Remember that Derrida said that meaning slips from signifier to signifier. Lacan said so too it was for satisfaction and language. The symbolic order is always pushed around by our wants — this is called “the Real”, which disturbs and upsets the symbolic order’s desire to be complete.",
+            "So Lacan claims that “The Real” is something we only encounter in indirect forms — in the patterns of life, and in our dreams. Readings:",
+            "(reading.) Zizek contests the common notion that psychoanalysis is dead from exposure to better scientific methodology and a modern culture of hedonism. He accounts that psychoanalysis in the realm of dreams is useful to think in the principle of “reality is for those who cannot sustain the dream.”",
+            "So Fantasy is where we protect ourselves from the knowledge that the symbolic order is disrupted and incomplete. It’s the way we “sew the world up”. European Anti-semitism is one such Fantasy. This explains the strange attachment we have for certain ideas.",
+            "(reading.) Brooks argued that, in essence, the only reason why we give beginnings in a story their unique significance is because they indicate an ending of some kind: so, we hastily finish the beginning and work through the obstacle of the middle so we may know the satisfaction of the ending. Yet this desire for death is moderated by the innate fear of the improper ending — hence, repetition intermediates the drive for death, linking a novel’s subplot to its ‘main plot’, linking various aspects of a story to various points of the plot — thus mimicking how a dreamer will repeat stimuli of everyday life or traumatic events in order to master the food of stimuli. Yet, we shouldn’t be so foolish to think the sole purpose of repetition is mastery: rather, it permits the emergence of mastery and the “possibility of postponement”. The energy of repetition, with all its ‘deviance, extravagance, excess’ is what ‘maintains the plot in its movement through the vacillating play in the middle’.",
+            "So then does repetition subvert the very notion of beginning and end? We know that beginnings (in the traditional sense of “it all began when...”) must happen after ends, and that “it is the role of fictional plots to impose an end which yet suggests a return... a rereading... [it wants] to recapture us in its doomed energies.” Fictional works ultimately strive to eternally re-instigate and fulfill the death instinct.",
+            "So, psychoanalysis is interested in the desires of and within the text, and how they are related. One application was created by Julia Kristeva in poetry. She thought structuralism had the weakness of thinking that the language’s speakers in this theory had to possess an unconscious. Her claim was that the child was able to reproduce noises that were associated with meaning before acquisition of language. The sounds were made for pleasures — they were themselves agents. Isn’t this the point of Dr. Seuss? This babbling is something we must discard as a pre-language, a separate economy language. Literature’s object, however, isn't identifiable outside of language. This is a usage of the semiotic.",
+            "Peter Brooks explored what psychoanalysis means in narrative. He thinks of his work as neo-structuralist. Every narrative is set in motion by a desire. While detours and delays in the fulfillment of the narrative’s desire appear accidental, they must exist for a proper fulfillment: “we want it to end... but we want it to go on.” Readers meaning, a point, from their narrative.",
+            "In “A Scandal in Bohemia”, there are two layers of desire: the resolution of the ambiguous beginning of the episodic mystery, and the resolution of the strange and bizarre into something normal and understandable. On top of these two layers there’s a third: what is meant by ‘To Holmes, she is always the woman”. Tools for the toolbox:",
+            "Unconscious: that which disturbs our conscious life, but is its precondition.",
+            "The Symbolic Order: the order produced at the resolution of the Oedipal Complex",
+            "The Real: that which resists the symbolic order",
+            "Fantasy: the way we attempt to repair to symbolic order",
+            "Semiotic: the signification that precedes the Symbolic",
+            "Desire: the form our impulses take on in the symbolic order. It is by definition unsatisfiable."
+          ]
+        },
+        "11 Literature and Gender": {
+          "null": [
+            "Feminism wasn’t a sudden movement — it has historical roots in many cultures and periods of times. Feminism has moved to get women writers included in the Canon.",
+            "Mary Wollstonecraft wrote “A Vindication of the Rights of Women”, as a reaction to the French Revolution — a movement she supported — primarily addressing the rights of men, not women. Yet she failed to convince her English counterparts, and was publicly ridiculed.",
+            "So Feminism got its start in the 19th century — in the US, during the Seneca Falls Convention. In Canada, the suffrage movement began in the 1890s and continued through the next two decades. It was most militant in England, where the movement tried not only for suffrage but also education rights and birth control.",
+            "All this impacted literary criticism: Virginia Woolf became a famous critic who focussed on women writers, and elevated writers like Austen and Bronte for writing “as women write, not as men write”. This idea, that women literature had a different style than men, served to be very influential for the future of feminism in literary criticism.",
+            "Second-wave feminism came about in the 60s amidst many other political movements. This lead to a broader scope of ideas from which to draw from. This also lead to many branches of feminist thought. We might classify these strands of thought into four groups:",
+            "1. Equality Feminism: aimed the change laws to bring about equality",
+            "2. Radical Feminism: wanting to emphasize difference between men and women, and change in women’s organization",
+            "3. Socialist Feminism: emphasis of women in the workplace",
+            "4. Deconstructive Feminism: deconstructing boundaries between male and female",
+            "Feminists invented new political tactics and formats of demonstration. Discussion groups. “The personal is political” was a motto which indicated that politics echoed in personal actions.",
+            "Going forward, we’ll classify feminist literary criticism as follows:",
+            "1. Critiques of sexism in literature",
+            "2. Advocacy for women's criticisms",
+            "3. Theory of “ecriture feminine”",
+            "4. Feminist psychoanalytic theory",
+            "5. American poststructuralist feminism",
+            "So (1) critiques of sexism was basically like shooting fish in a barrel, but the scope was so big. Many scholars took offence to this project, but eventually became more nuanced.",
+            "Similar resistance was met upon (2) the project of “gynocentrism” and women authors in the Canon. This eventually resulted in reexaminations of genres.",
+            "(3) Ecriture Feminine held that the division between he and she was held up by the symbolic order — which could only be brought down by “womanly writing” which asserted its femininity by its style.",
+            "(4) Michell Foulcault extended Derrida to show how our relationship to our body was moderated by social institutions. Judith Butler extended this idea to suggest that gender was performative: gender was a consolidation of our actions and significants. So this meant that there were no natural combinations of gender and sexuality.",
+            "Let’s apply all this to “Scandal”. The easiest criticism of it is that its the story of how Holmes was beaten by a woman’s wit. Keep in mind that this was published in the middle of suffrage movements, and the emergence of “The New Woman”.",
+            "But there’s more here than a celebration of a woman’s wit. After all, she’s “the woman” — the only woman in the story. She’s what captures “the male gaze” here. We receive descriptions of of her from Holmes, the King, and Watson, but never through her own gaze. Also keep in mind that she’s the greatest representation of her gender in Holmes’ mind, but she’s described as having a man’s wit.",
+            "So Doyle’s story is ultimately ambiguous. Her wit is part of her male allure. What if a non-straight male, or straight woman, reads the wok? This is a problem of spectatorship. Tools for the toolbox:",
+            "Gender: the term we use to describe the relationship between masculinity and femininity",
+            "Écriture Féminine: the kind of writing, described by Hélène Cixous, that undermines the binary oppositions of gender. A subversive and playful kind of writing, an almost artistic version of deconstruction, which is supposed to express one’s bodily sensations more fully than “male” writing",
+            "Gynocentrism: a critical stance that emphasizes the recovery and revaluing of literary works by women",
+            "Performative Concept of Gender: the argument that gender is not something natural but something which is always a performance, an act"
+          ]
+        },
+        "12 Literature, The Nation, and Colonialism": {
+          "null": [
+            "We’ll finish the course through Postcolonial theory and criticism. Unlike our focus on Marxism, Psychoanalysis, or Feminist criticism, this body isn’t theoretically unified set of ideas, but rather an interest in a particular situation — a concern of how colonialism influences literature. This contains many theories.",
+            "In 1914, the British and French Empires were still going pretty strong. By then, it was a world of some independent nations, and many colonized countries.",
+            "Many empires predate Britain: Rome engulfed the Mediterranean, and the Arabic Empire took up North Africa and the Arabian peninsula. This “habit” arose out of sophisticated societies requiring cheaper access to resources. But the colonialism we’re concerned with is modern colonialism.",
+            "Colonizing countries, though, didn’t describe their actions in such blunt economic forms. They described it as a noble attempt to civilize primitive people in need of European, or Christian, guidance. So Europeans thought themselves superior.",
+            "Yet “civilizing” people required acquiring knowledge about them. They described native peoples, their communities, and their religions and beliefs. This had a dramatic impact on European arts and sciences. Linguistics had part of its origins when a man noticed Sanskrit’s similarity to Greek and Latin. It was also the origin of anthropology, and the theory of race. This reminds us that the colonial “knowledge” wasn’t entirely factual: it was grounded in a particular inarguable ideology. Said describes this apparatus as Orientalism: the ideology which justified colonialism and masked its true horrors.",
+            "There were many different kinds of colonies. Settler colonies involved placing European communities on previously Native land. This often involved the displacement or destruction of native communities. In Africa, however, colonizers sought to control colonies without displacement (exception in South Africa). A local elite was often educated and converted, and after were tasked with impressing colonial power upon their community. This created a division within the local population.",
+            "There was resistance against colonialism from the beginning. Native peoples in Canada and the US fought against colonizers, though were defeated. Latin states had revolutions against their colonial masters. And India had a series of revolts before Gandhi.",
+            "The long process of decolonization in the late 20th century is what justifies the term “Postcolonial”, which describes nations with a colonial past. Populations may still be divided in elites and the majority. This creates a difference in literary output — in language use, for instance. Writers who use native languages remain virtually unknown. This also gave many European writers experiences in colonial processes. Finally, mass immigration has scattered many peoples across the globe (via slavery or otherwise). Thus, multiculturalism is a consequence of colonialism.",
+            "Postcolonial studies suggest the terms “core” and “peripheral” countries, to describe military and economic power unevenly distributed across nations.",
+            "Postcolonial studies often concern the literature of colonizing nations (so as to see how colonialism impacted their own understanding of the world), expanding the canon of English literature to writers in postcolonial nations, and attempts to understand colonial ideologies within literary texts. So postcolonialism and its theories is similar to feminism — vast, diverse, and decentralized.",
+            "Edward Said was the first to insist upon the importance of colonialism in “Orientalism”. So he urges us to see the impacts of colonialism and imperialism, even in texts that seem unrelated to the subject at first glance.",
+            "This work is historical — it broadens texts to include the colonials and imperialism of the time. These twin force he claims, were entangled in what it meant to be British at the time. This resulted in twin theoretical innovations:",
+            "1. Double Consciousness",
+            "2. Hybridity",
+            "Double Consciousness was coined by W.E.B. Du Bois as a “sense of always looking at one’s self through the eyes of others”. He was referring to the plight of black Americans who were forced to see themselves through the lens of white society. This was taken up by Postcolonialist thinkers.",
+            "So it’s easy to see the application to literature. Postcolonial authors may have a very difficult task. Authors of colonist origin may not wish to discuss colonialist ideology whatsoever.",
+            "Writing often describes a scene or a place. Postcolonial criticism urges us to examine what’s included and excluded from this picture. Who is seen as human, or as alien? Who belongs, and who is out of place?",
+            "As part of the apparatus of colonialist thought, the colonizers had to draw a sharp line between themselves and the colonized population. Yet we know that these sharp oppositions (i.e. primitiveness vs civility, rationality vs mysticism) are not as they seem: that one side defines the other. So it may seem that the British people are a group with particular characteristics (as they define themselves, at least), closer examination reveals that these characteristics are merely a collection of qualities opposite to what defined (in their minds) the Colonized Others. So Britishness is dependent upon colonialism.",
+            "A psychoanalytic twist: Bhabha suggested that the colonial subject was something like Freud’s Conscious, and its colonized other, its Unconscious. The colonizer is often caught between disgust of the colonized, and a fascination of them. Bhabha sees this as a fragility of the colonizer’s identity being fundamentally different from the colonized — as a kind of anxiety concerning how entangled they are from the colonized. This heightened for colonial administrators and the colonized administrators that they were often tasked to educate in language and culture, yet still had to somehow differentiate themselves. Hybridity refers to all such ambiguities between colonizers and colonized.",
+            "Stuart Hall gave hybridity a different spin. His interest was how nationalities described themselves as pure (i.e. “The Americans”). This was often entangled in race. So races and nations often wanted to disavow the fact of mixture.",
+            "So whats the application to literature? An application to Postcolonial literature. It has succeeded in expanding the Canon. Yet it also asserts the presence of colonialism in every ext even it its not explicit. Tools for the toolbox:",
+            "Postcolonial: the situation former colonies and colonizing countries find themselves in after colonies achieve independence.",
+            "Double Consciousness: the dilemma of the black subject in America, and the colonial subject, who sees themselves through the lens of their oppressors.",
+            "Hybridity: the fate of all attempts to define a national or ethnic identity as self-sufficient. All identities are mixed.",
+            "Symptom: indirect, coded expressions of some conflict in the text, something it’s trying to repress."
+          ]
         }
-      },
-      "10 Psychoanalytic Criticism" : {
-        "null" : [
-          "Sigmund Freud was interested in literature — he often attempted to apply psychoanalysis to literature. We’re going to study a later branch of psychoanalysis which incorporated Structuralism under Lacan.",
-          "Psychoanalysis is both an elaborate theory and method. Freud developed this theory from his experiences with treating individual patients. Among the most famous of this theoretical discoveries is his discovery of the unconscious — his decision to think of the mind not as a single conscious entity, but a conscious and unconscious.",
-          "The content of the unconscious is utterly different from the thoughts of the conscious. Its content is there only because it had to be “buried”. Freud thought of this when treating patients suffering from “neurosis” and “hysteria”. He believed that hysterics “suffer from reminisces” — where at some point in their lives they experienced a strong impulse or wish which had to be buried because of societal standards.",
-          "Freud came up with different techniques to interpreting these symptoms — usually by placing the patient in a place where their repressive nature is weakened.",
-          "Freud radically assured the the Baby had no sense of self — its just a bundle of impulses, a “person- omlette”. He believed that the impulses of an infant’s life are “erotic”, since adult erotic pleasures are derivative of these infantile sensations. Many of these pleasures are directly in association with the mother — so when the father becomes a rival for the child’s affections, the child develops an Oedipal complex. To become a man, the child must give up this complex, and begin forging its own complex. Though necessary, this transition is traumatic, as it forces the developing human to repress these erotic wishes. These repressed wishes constitute the unconscious. Thus, adulthood and adult sexuality is predicated upon the existence of an unconscious.",
-          "All this is kinda far-fetched, right? But keep in mind that Freud was describing more a pattern of development than a process that literally applies to everyone. At some point, the child will encounter prohibition of impulses that forces a child to give up their narcissism and triggers a reorganization of the world.",
-          "In the 50s and 60s, Jacques Lacan introduced psychoanalysis and structuralism to one another. He suggested that the moment of consciousness is also the moment a child acquires language.",
-          "Note that in order for an Oedipal complex to develop, the child must accept that it is one and not the other — that it is like the father, but that it is separate from the father. So, it has to abstract itself as a class of humans. This requires language.",
-          "Lacan said this is “the entry into the symbolic order.”",
-          "Remember that Derrida said that meaning slips from signifier to signifier. Lacan said so too it was for satisfaction and language. The symbolic order is always pushed around by our wants — this is called “the Real”, which disturbs and upsets the symbolic order’s desire to be complete.",
-          "So Lacan claims that “The Real” is something we only encounter in indirect forms — in the patterns of life, and in our dreams. Readings:",
-          "(reading.) Zizek contests the common notion that psychoanalysis is dead from exposure to better scientific methodology and a modern culture of hedonism. He accounts that psychoanalysis in the realm of dreams is useful to think in the principle of “reality is for those who cannot sustain the dream.”",
-          "So Fantasy is where we protect ourselves from the knowledge that the symbolic order is disrupted and incomplete. It’s the way we “sew the world up”. European Anti-semitism is one such Fantasy. This explains the strange attachment we have for certain ideas.",
-          "(reading.) Brooks argued that, in essence, the only reason why we give beginnings in a story their unique significance is because they indicate an ending of some kind: so, we hastily finish the beginning and work through the obstacle of the middle so we may know the satisfaction of the ending. Yet this desire for death is moderated by the innate fear of the improper ending — hence, repetition intermediates the drive for death, linking a novel’s subplot to its ‘main plot’, linking various aspects of a story to various points of the plot — thus mimicking how a dreamer will repeat stimuli of everyday life or traumatic events in order to master the food of stimuli. Yet, we shouldn’t be so foolish to think the sole purpose of repetition is mastery: rather, it permits the emergence of mastery and the “possibility of postponement”. The energy of repetition, with all its ‘deviance, extravagance, excess’ is what ‘maintains the plot in its movement through the vacillating play in the middle’.",
-          "So then does repetition subvert the very notion of beginning and end? We know that beginnings (in the traditional sense of “it all began when...”) must happen after ends, and that “it is the role of fictional plots to impose an end which yet suggests a return... a rereading... [it wants] to recapture us in its doomed energies.” Fictional works ultimately strive to eternally re-instigate and fulfill the death instinct.",
-          "So, psychoanalysis is interested in the desires of and within the text, and how they are related. One application was created by Julia Kristeva in poetry. She thought structuralism had the weakness of thinking that the language’s speakers in this theory had to possess an unconscious. Her claim was that the child was able to reproduce noises that were associated with meaning before acquisition of language. The sounds were made for pleasures — they were themselves agents. Isn’t this the point of Dr. Seuss? This babbling is something we must discard as a pre-language, a separate economy language. Literature’s object, however, isn't identifiable outside of language. This is a usage of the semiotic.",
-          "Peter Brooks explored what psychoanalysis means in narrative. He thinks of his work as neo-structuralist. Every narrative is set in motion by a desire. While detours and delays in the fulfillment of the narrative’s desire appear accidental, they must exist for a proper fulfillment: “we want it to end... but we want it to go on.” Readers meaning, a point, from their narrative.",
-          "In “A Scandal in Bohemia”, there are two layers of desire: the resolution of the ambiguous beginning of the episodic mystery, and the resolution of the strange and bizarre into something normal and understandable. On top of these two layers there’s a third: what is meant by ‘To Holmes, she is always the woman”. Tools for the toolbox:",
-          "Unconscious: that which disturbs our conscious life, but is its precondition.",
-          "The Symbolic Order: the order produced at the resolution of the Oedipal Complex",
-          "The Real: that which resists the symbolic order",
-          "Fantasy: the way we attempt to repair to symbolic order",
-          "Semiotic: the signification that precedes the Symbolic",
-          "Desire: the form our impulses take on in the symbolic order. It is by definition unsatisfiable."
-        ]
-      },
-      "11 Literature and Gender" : {
-        "null" : [
-          "Feminism wasn’t a sudden movement — it has historical roots in many cultures and periods of times. Feminism has moved to get women writers included in the Canon.",
-          "Mary Wollstonecraft wrote “A Vindication of the Rights of Women”, as a reaction to the French Revolution — a movement she supported — primarily addressing the rights of men, not women. Yet she failed to convince her English counterparts, and was publicly ridiculed.",
-          "So Feminism got its start in the 19th century — in the US, during the Seneca Falls Convention. In Canada, the suffrage movement began in the 1890s and continued through the next two decades. It was most militant in England, where the movement tried not only for suffrage but also education rights and birth control.",
-          "All this impacted literary criticism: Virginia Woolf became a famous critic who focussed on women writers, and elevated writers like Austen and Bronte for writing “as women write, not as men write”. This idea, that women literature had a different style than men, served to be very influential for the future of feminism in literary criticism.",
-          "Second-wave feminism came about in the 60s amidst many other political movements. This lead to a broader scope of ideas from which to draw from. This also lead to many branches of feminist thought. We might classify these strands of thought into four groups:",
-          "1. Equality Feminism: aimed the change laws to bring about equality",
-          "2. Radical Feminism: wanting to emphasize difference between men and women, and change in women’s organization",
-          "3. Socialist Feminism: emphasis of women in the workplace",
-          "4. Deconstructive Feminism: deconstructing boundaries between male and female",
-          "Feminists invented new political tactics and formats of demonstration. Discussion groups. “The personal is political” was a motto which indicated that politics echoed in personal actions.",
-          "Going forward, we’ll classify feminist literary criticism as follows:",
-          "1. Critiques of sexism in literature",
-          "2. Advocacy for women's criticisms",
-          "3. Theory of “ecriture feminine”",
-          "4. Feminist psychoanalytic theory",
-          "5. American poststructuralist feminism",
-          "So (1) critiques of sexism was basically like shooting fish in a barrel, but the scope was so big. Many scholars took offence to this project, but eventually became more nuanced.",
-          "Similar resistance was met upon (2) the project of “gynocentrism” and women authors in the Canon. This eventually resulted in reexaminations of genres.",
-          "(3) Ecriture Feminine held that the division between he and she was held up by the symbolic order — which could only be brought down by “womanly writing” which asserted its femininity by its style.",
-          "(4) Michell Foulcault extended Derrida to show how our relationship to our body was moderated by social institutions. Judith Butler extended this idea to suggest that gender was performative: gender was a consolidation of our actions and significants. So this meant that there were no natural combinations of gender and sexuality.",
-          "Let’s apply all this to “Scandal”. The easiest criticism of it is that its the story of how Holmes was beaten by a woman’s wit. Keep in mind that this was published in the middle of suffrage movements, and the emergence of “The New Woman”.",
-          "But there’s more here than a celebration of a woman’s wit. After all, she’s “the woman” — the only woman in the story. She’s what captures “the male gaze” here. We receive descriptions of of her from Holmes, the King, and Watson, but never through her own gaze. Also keep in mind that she’s the greatest representation of her gender in Holmes’ mind, but she’s described as having a man’s wit.",
-          "So Doyle’s story is ultimately ambiguous. Her wit is part of her male allure. What if a non-straight male, or straight woman, reads the wok? This is a problem of spectatorship. Tools for the toolbox:",
-          "Gender: the term we use to describe the relationship between masculinity and femininity",
-          "Écriture Féminine: the kind of writing, described by Hélène Cixous, that undermines the binary oppositions of gender. A subversive and playful kind of writing, an almost artistic version of deconstruction, which is supposed to express one’s bodily sensations more fully than “male” writing",
-          "Gynocentrism: a critical stance that emphasizes the recovery and revaluing of literary works by women",
-          "Performative Concept of Gender: the argument that gender is not something natural but something which is always a performance, an act"
-        ]
-      },
-      "12 Literature, The Nation, and Colonialism" : {
-        "null" : [
-          "We’ll finish the course through Postcolonial theory and criticism. Unlike our focus on Marxism, Psychoanalysis, or Feminist criticism, this body isn’t theoretically unified set of ideas, but rather an interest in a particular situation — a concern of how colonialism influences literature. This contains many theories.",
-          "In 1914, the British and French Empires were still going pretty strong. By then, it was a world of some independent nations, and many colonized countries.",
-          "Many empires predate Britain: Rome engulfed the Mediterranean, and the Arabic Empire took up North Africa and the Arabian peninsula. This “habit” arose out of sophisticated societies requiring cheaper access to resources. But the colonialism we’re concerned with is modern colonialism.",
-          "Colonizing countries, though, didn’t describe their actions in such blunt economic forms. They described it as a noble attempt to civilize primitive people in need of European, or Christian, guidance. So Europeans thought themselves superior.",
-          "Yet “civilizing” people required acquiring knowledge about them. They described native peoples, their communities, and their religions and beliefs. This had a dramatic impact on European arts and sciences. Linguistics had part of its origins when a man noticed Sanskrit’s similarity to Greek and Latin. It was also the origin of anthropology, and the theory of race. This reminds us that the colonial “knowledge” wasn’t entirely factual: it was grounded in a particular inarguable ideology. Said describes this apparatus as Orientalism: the ideology which justified colonialism and masked its true horrors.",
-          "There were many different kinds of colonies. Settler colonies involved placing European communities on previously Native land. This often involved the displacement or destruction of native communities. In Africa, however, colonizers sought to control colonies without displacement (exception in South Africa). A local elite was often educated and converted, and after were tasked with impressing colonial power upon their community. This created a division within the local population.",
-          "There was resistance against colonialism from the beginning. Native peoples in Canada and the US fought against colonizers, though were defeated. Latin states had revolutions against their colonial masters. And India had a series of revolts before Gandhi.",
-          "The long process of decolonization in the late 20th century is what justifies the term “Postcolonial”, which describes nations with a colonial past. Populations may still be divided in elites and the majority. This creates a difference in literary output — in language use, for instance. Writers who use native languages remain virtually unknown. This also gave many European writers experiences in colonial processes. Finally, mass immigration has scattered many peoples across the globe (via slavery or otherwise). Thus, multiculturalism is a consequence of colonialism.",
-          "Postcolonial studies suggest the terms “core” and “peripheral” countries, to describe military and economic power unevenly distributed across nations.",
-          "Postcolonial studies often concern the literature of colonizing nations (so as to see how colonialism impacted their own understanding of the world), expanding the canon of English literature to writers in postcolonial nations, and attempts to understand colonial ideologies within literary texts. So postcolonialism and its theories is similar to feminism — vast, diverse, and decentralized.",
-          "Edward Said was the first to insist upon the importance of colonialism in “Orientalism”. So he urges us to see the impacts of colonialism and imperialism, even in texts that seem unrelated to the subject at first glance.",
-          "This work is historical — it broadens texts to include the colonials and imperialism of the time. These twin force he claims, were entangled in what it meant to be British at the time. This resulted in twin theoretical innovations:",
-          "1. Double Consciousness",
-          "2. Hybridity",
-          "Double Consciousness was coined by W.E.B. Du Bois as a “sense of always looking at one’s self through the eyes of others”. He was referring to the plight of black Americans who were forced to see themselves through the lens of white society. This was taken up by Postcolonialist thinkers.",
-          "So it’s easy to see the application to literature. Postcolonial authors may have a very difficult task. Authors of colonist origin may not wish to discuss colonialist ideology whatsoever.",
-          "Writing often describes a scene or a place. Postcolonial criticism urges us to examine what’s included and excluded from this picture. Who is seen as human, or as alien? Who belongs, and who is out of place?",
-          "As part of the apparatus of colonialist thought, the colonizers had to draw a sharp line between themselves and the colonized population. Yet we know that these sharp oppositions (i.e. primitiveness vs civility, rationality vs mysticism) are not as they seem: that one side defines the other. So it may seem that the British people are a group with particular characteristics (as they define themselves, at least), closer examination reveals that these characteristics are merely a collection of qualities opposite to what defined (in their minds) the Colonized Others. So Britishness is dependent upon colonialism.",
-          "A psychoanalytic twist: Bhabha suggested that the colonial subject was something like Freud’s Conscious, and its colonized other, its Unconscious. The colonizer is often caught between disgust of the colonized, and a fascination of them. Bhabha sees this as a fragility of the colonizer’s identity being fundamentally different from the colonized — as a kind of anxiety concerning how entangled they are from the colonized. This heightened for colonial administrators and the colonized administrators that they were often tasked to educate in language and culture, yet still had to somehow differentiate themselves. Hybridity refers to all such ambiguities between colonizers and colonized.",
-          "Stuart Hall gave hybridity a different spin. His interest was how nationalities described themselves as pure (i.e. “The Americans”). This was often entangled in race. So races and nations often wanted to disavow the fact of mixture.",
-          "So whats the application to literature? An application to Postcolonial literature. It has succeeded in expanding the Canon. Yet it also asserts the presence of colonialism in every ext even it its not explicit. Tools for the toolbox:",
-          "Postcolonial: the situation former colonies and colonizing countries find themselves in after colonies achieve independence.",
-          "Double Consciousness: the dilemma of the black subject in America, and the colonial subject, who sees themselves through the lens of their oppressors.",
-          "Hybridity: the fate of all attempts to define a national or ethnic identity as self-sufficient. All identities are mixed.",
-          "Symptom: indirect, coded expressions of some conflict in the text, something it’s trying to repress."
-        ]
       },
       "course_name" : "ENGL 251B",
       "is_online" : "True",
