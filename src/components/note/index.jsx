@@ -39,6 +39,18 @@ class NoteIndex extends React.Component {
                 {this.state.course_content_by_units !== undefined
                     ?
                     Object.keys(this.state.course_content_by_units)
+                        .sort((a,b) => {
+                            const a_int = parseInt(a.split(' ')[0], 10);
+                            const b_int = parseInt(b.split(' ')[0], 10);
+                            console.log("Comparing " + a_int + " v " + b_int);
+                            if (a_int < b_int) {
+                                return -1;
+                            } else if (a_int > b_int) {
+                                return 1;
+                            } else {
+                                return 0;
+                            }
+                        })
                         .map((key) =>
                             <Note key={key} title={key} unit_content={this.state.course_content_by_units[key]} />)
                     :
