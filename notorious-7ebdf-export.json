@@ -1,12 +1,12 @@
 {
-  "Hello" : "Are you there?",
-  "courses" : {
-    "ENGL 251B" : "Introduction to British Literature II",
-    "CS 241" : "Foundations of Sequential Programs"
+  "Hello": "Are you there?",
+  "courses": {
+    "ENGL 251B": "Introduction to British Literature II",
+    "CS 241": "Foundations of Sequential Programs"
   },
-  "notes" : {
-    "ENGL 251B" : {
-      "course_content_by_units" : {
+  "notes": {
+    "ENGL 251B": {
+      "course_content_by_units": {
         "2 What is Literature?": {
           "null": [
             "What makes something a piece of literature, or what is the nature of being literary? No one knows for sure.",
@@ -274,13 +274,13 @@
           ]
         }
       },
-      "course_name" : "ENGL 251B",
-      "is_online" : "True",
-      "taken" : "Spring Term 2017, 3B"
+      "course_name": "ENGL 251B",
+      "is_online": "True",
+      "taken": "Spring Term 2017, 3B"
     },
-    "CS 241" : {
-      "course_content_by_units" : {
-        "Introduction" : {
+    "CS 241": {
+      "course_content_by_units": {
+        "1 Introduction": {
           "09-07-2016": [
             "h2. Course Info",
             "* Website: student.cs.uwaterloo.ca/~cs241",
@@ -326,7 +326,7 @@
             "* How hard is it to write an assembler? Take a shot at A3 and A4. A1, you are an assembler, A2 makes you make write assembly, then A3 and A4 makes you automate this stuff."
           ]
         },
-        "The Semantics of Data" : {
+        "2 The Semantics of Data": {
           "09-07-2016": [
             "h2. Bits!",
             "* A bit is a 1 or 0. Shortened from BInary digiTS",
@@ -388,7 +388,7 @@
             "** if you pipe through the nonsense from cat'ing an image into less (xxd blah.jpg | less), you can gleam the ASCII from the image file. Camera info and date will always be encoded in the metadata of it."
           ]
         },
-        "The Machine Cycle & MIPS" : {
+        "3 The Machine Cycle & MIPS": {
           "09-13-2016": [
             "h2. Our Machine: A Stored Program Computer",
             "* CPU flows back and forth to the RAM via the 'bus'/'Backbone'",
@@ -539,8 +539,8 @@
             "* Chill out on dynamic memory for another 8 weeks. You don't need it right now. "
           ]
         },
-        "Assemblers" : {
-          "09-20-2016" : [
+        "4 Assemblers": {
+          "09-20-2016": [
             "h2. Overview",
             "* Any assembler takes in a sequence of characters, and outputs a sequence of bits.",
             "* That is, you make an assembly language program in ASCII, put it through an assembler, then out pops a machine language program.",
@@ -567,7 +567,7 @@
             "* A tokenizer might take in 'add $1, $1, $2', and output an <ADD> token, <REG>, <COMMA>, <REG>, <COMMA>, <REG>.",
             "* We're given a tokenizer for A3. Thanks, Troy!"
           ],
-          "09-22-2016" : [
+          "09-22-2016": [
             "h2. Remember assemblers?",
             "* Assemblers take in a program and produce an equivalent in machine code",
             "* Two passes required to deal with labels",
@@ -648,7 +648,7 @@
             "** Read the spec carefully. Refer to 'Correctness' slide.",
             "* Remember that you have to run in linear time. Only look at the original MIPS once."
           ],
-          "10-04-2016" : [
+          "10-04-2016": [
             "h1. CS 241 Notes October 4th, 2016",
             "h2. Linker!",
             "* Recall: .import says 'I don't have thsid value now, but it's around here somewhere'. .export says 'make this value available to everyone else.",
@@ -692,7 +692,7 @@
             "h2. Where are we now? Where to next?"
           ]
         },
-        "Introduction to Formal Languages" : {
+        "5 Introduction to Formal Languages": {
           "10-04-2016": [
             "* Compilers!",
             "h1. Introduction to Formal Languages",
@@ -789,7 +789,7 @@
             "** then T* = {epsilon, dog, cat, dogdog, dogcat, catdog, catcat, dogdogdog, dogdogcat, ...}"
           ]
         },
-        "Deterministic & Nondeterministic Finite Automata" : {
+        "6 Deterministic & Nondeterministic Finite Automata": {
           "10-06-2016": [
             "h2. Recognizers: Finite Automata",
             "* REgular languages can be recognized by finite automata (i.e. 'machine', system) that follow states.",
@@ -1072,8 +1072,8 @@
             "* That's why C++ is terrible: it fails the most basic Maximal Munch algorithm"
           ]
         },
-        "Non-Regular & Context-Free Languages" : {
-          "10-20-2016" : [
+        "7 Non-Regular & Context-Free Languages": {
+          "10-20-2016": [
             "h2. Non-regular languages",
             "Try to give a DFA over Sigma = {a,b} for L_e = {w: numbers of as in w = numbers of bs in w}",
             "You can't! This DFA is infinite! This leads us to suspect that L_e is not a regular language.",
@@ -1200,7 +1200,7 @@
             "e.g. n: A -> gamma",
             "L is context-free if there exists a CFG G st L(G) = L"
           ],
-          "10-25-2016" : [
+          "10-25-2016": [
             "h2. Formal Definitions (cont)",
             "Remember, CFGs look like non-terminals that can be rewritten into a set of terminals or non-terminals",
             "Also remember 'leftmost derivations' and 'rightmost derivations'? So much fun.",
@@ -1367,8 +1367,8 @@
             "Since L(G) = L, L is context-free. QED."
           ]
         },
-        "Parsing" : {
-          "11-01-2016" : [
+        "8 Parsing": {
+          "11-01-2016": [
             "h2. Algorithm, to construct predictor table",
             "Below, a, B, in (N union T)*, x,y in T, A in N",
             "Empty(a) = true if alpha =>* ep",
@@ -1509,7 +1509,7 @@
             "** reduce if the current state has only one item"
           ]
         },
-        "Compilers" : {
+        "9 Compilers": {
           "11-08-2016": [
             "h2. Big Picture of WLP4 Compilation",
             "WLP4 file -----> Compiler ------|\tMIPS Machine langauge",
@@ -2510,8 +2510,8 @@
             "** Java certainly doesn't -- it does implicit memory management"
           ]
         },
-        "Heap Management" : {
-          "11-29-2016" : [
+        "10 Heap Management": {
+          "11-29-2016": [
             "h2. A few words on heap management",
             "* Remember how most languages have this dumb 'delete' thing?",
             "** Also remember how Java has this dumb 'delete' thing?",
@@ -2664,10 +2664,8 @@
             "* more complicated than first-fit => O(lgn)",
             "Worst-fit",
             "* find the biggest block => max-heap"
-          ]
-        },
-        "Final Words" : {
-          "12-01-2016" : [
+          ],
+          "12-01-2016": [
             "h2. Deallocation",
             "* requires a special set of space dedicated wthin each block in reference to various functions",
             "Cookie | Prev | Next | Length | Alloc (flag) | 'real block'",
@@ -2796,7 +2794,11 @@
             "direct graph search",
             "x -> A -> B",
             "I can belete x if I know A and B aren't used,",
-            "but also if nothing else points to either A or B.",
+            "but also if nothing else points to either A or B."
+          ]
+        },
+        "11 Final Words": {
+          "12-01-2016": [
             "h2. A few final words about C/C++",
             "Appel: Compiler textbook, copy and collect (yes, that's the correct spelling)",
             "* stacks are obsolete",
