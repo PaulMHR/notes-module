@@ -1,0 +1,3 @@
+[submodule "src/components/editor/markdown-editor"]
+	path = src/components/editor/markdown-editor
+	url = https://github.com/PaulMHR/markdown-editor.git
