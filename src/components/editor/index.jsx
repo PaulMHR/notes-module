@@ -1,10 +1,10 @@
-var React = require('react');
-var MarkdownEditor = require('react-markdown-editor').MarkdownEditor;
+import React from 'react';
+import App from './markdown-editor/app/app';
 
 var TestComponent = React.createClass({
     render: function() {
         return (
-            <MarkdownEditor initialContent="Test" iconsSet="font-awesome"/>
+            <App />
         );
     }
 });
