@@ -26,4 +26,4 @@ let productionRouter = () => (
     </Router>
 );
 
-export default productionRouter;
+export default devRouter;
