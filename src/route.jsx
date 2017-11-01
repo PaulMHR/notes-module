@@ -6,7 +6,7 @@ import MainMenu from './components/main_menu/index';
 import Note from './components/note/index';
 import Editor from './components/editor/index';
 
-export default () => (
+let devRouter = () => (
     <Router>
         <div className="route_div">
             <Route exact={true} path="/" component={MainMenu} />
@@ -15,3 +15,15 @@ export default () => (
         </div>
     </Router>
 );
+
+let productionRouter = () => (
+    <Router>
+        <div className="route_div">
+            <Route exact={true} path="/notorious" component={MainMenu} />
+            <Route path="/notorious/note/:courseId" component={Note} />
+            <Route path="/notorious/editor" component={Editor} />
+        </div>
+    </Router>
+);
+
+export default productionRouter;
