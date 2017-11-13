@@ -12,14 +12,12 @@ def parse_file(year, filename = sys.argv[1], print_output = True):
         print("Usage: print_line_list.py <filename/directory_name>")
     elif os.path.isfile(filename) is False:
         print("filename given does not exist.")
-    elif date_match is None:
-        print("filename does not follow correct format of MMddNotes.md")
     else:
         lines = []
-        date = date_match.group(1) + '-' + date_match.group(2) + '-' + str(year)
+        date = "null" if date_match is None else date_match.group(1) + '-' + date_match.group(2) + '-' + str(year)
         lines += ['"' + date + '": [']
         with open(filename, 'r') as f:
-            content_lines = ['\t' + '"' + line.replace('\n', '').replace('"', "'").replace("\\", "\\\\") + '",' for line in f.readlines() if (line.replace('\n', '') != "" and comment_line_re.match(line) is None)]
+            content_lines = ['\t' + '"' + line.replace('\n', '').replace('"', "'").replace("\\", "\\\\") + '",' for line in f.readlines() if (line.replace('\n', '') != "")] # and comment_line_re.match(line) is None)
             lines += content_lines
         lines += [']']
 
