@@ -20,19 +20,13 @@ class NoteIndex extends React.Component {
             let snapshot_keys = Object.keys(snapshot_val);
             for (let i = 0; i < snapshot_keys.length; i++) {
                 if (snapshot_keys[i] === this.state.subject) {
-                    console.log('a');
                     this.setState({...this.state, course_content_by_units: snapshot_val[snapshot_keys[i]]["course_content_by_units"]});
                 }
             }
         });
-        console.log('b');
-        console.log(this.state.course_content_by_units);
     }
 
     render() {
-        console.log('c');
-        console.log(this.state.course_content_by_units);
-
         return (
             <div className="view_div">
                 <NotesHeader subject={this.state.subject} />

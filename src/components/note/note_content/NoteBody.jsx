@@ -1,8 +1,9 @@
 import React from 'react';
+import Markdown from 'react-markdown';
 
 import "../styles/NoteBody.css";
 
-// TODO figure out what to do with date ;~;
+// TODO fix Markdown parsing for numbered lists. And for lists in general.
 export default ({date, date_note}) => {
 	return (
 		<div className="note_body_container">
@@ -12,9 +13,11 @@ export default ({date, date_note}) => {
 					<span></span>
 				}
 			</div>
-            {date_note.map(function(content_item, i) {
-                return <p key={i}>{content_item}</p>;
-            })}
+
+			<Markdown
+				className="markdown-text"
+				source={date_note.reduce((a, b) => a + ((a.split('\n').slice(-1)[0].indexOf('*') === 0 && b.indexOf('*') !== 0) ? '\n\n' : '\n') + b)}
+			/>
 		</div>
     );
 }
