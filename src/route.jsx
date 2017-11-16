@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom'
+import getEnvironment from './environment';
 import './common.css';
 
 import MainMenu from './components/main_menu/index';
@@ -21,9 +22,8 @@ let productionRouter = () => (
         <div className="route_div">
             <Route exact={true} path="/notorious" component={MainMenu} />
             <Route path="/notorious/note/:courseId" component={Note} />
-            <Route path="/notorious/editor" component={Editor} />
         </div>
     </Router>
 );
 
-export default devRouter;
+export default (getEnvironment() === "PROD") ? productionRouter : devRouter;
