@@ -10,7 +10,7 @@ export default () => (
         <h1>Notorious</h1>
         <hr/>
         <p>Notes written for students, by students.</p>
-        <p>Start studing with one of the courses below!</p>
+        <p>Start studying with one of the courses below!</p>
         <hr/>
         <div className="box_links">
             <ul className="box_links_list">
