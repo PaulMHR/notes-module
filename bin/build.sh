@@ -2,5 +2,6 @@
 mv docs build &
 npm run deploy
 mv build docs &
-git add docs/
+git add docs/ &
+git add src/
 
