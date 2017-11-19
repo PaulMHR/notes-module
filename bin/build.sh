@@ -1,7 +1,5 @@
 #!/bin/bash
-mv docs build &
+mv docs build 
 npm run deploy
-mv build docs &
-git add docs/ &
-git add src/
+mv build docs 
 
