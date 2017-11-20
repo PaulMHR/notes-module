@@ -1,7 +1,9 @@
 import React from 'react';
 import firebase from 'firebase';
+
 import Note from './note_content/index';
 import NotesHeader from './note_header/SubjectHeader';
+import NotFoundPage from './NotFoundPage';
 
 import "../../common.css";
 
@@ -29,25 +31,27 @@ class NoteIndex extends React.Component {
     render() {
         return (
             <div className="view_div">
-                <NotesHeader subject={this.state.subject} />
                 {this.state.course_content_by_units !== undefined
                     ?
-                    Object.keys(this.state.course_content_by_units)
-                        .sort((a,b) => {
-                            const a_int = parseInt(a.split(' ')[0], 10);
-                            const b_int = parseInt(b.split(' ')[0], 10);
-                            if (a_int < b_int) {
-                                return -1;
-                            } else if (a_int > b_int) {
-                                return 1;
-                            } else {
-                                return 0;
-                            }
-                        })
-                        .map((key) =>
-                            <Note key={key} title={key} unit_content={this.state.course_content_by_units[key]} />)
+                    <div>
+                        <NotesHeader subject={this.state.subject} />
+                        {Object.keys(this.state.course_content_by_units)
+                            .sort((a,b) => {
+                                const a_int = parseInt(a.split(' ')[0], 10);
+                                const b_int = parseInt(b.split(' ')[0], 10);
+                                if (a_int < b_int) {
+                                    return -1;
+                                } else if (a_int > b_int) {
+                                    return 1;
+                                } else {
+                                    return 0;
+                                }
+                            })
+                            .map((key) =>
+                                <Note key={key} title={key} unit_content={this.state.course_content_by_units[key]} />)}
+                    </div>
                     :
-                    <p>404 Not Found Error!</p>
+                    <NotFoundPage/>
                 }
             </div>
         );
