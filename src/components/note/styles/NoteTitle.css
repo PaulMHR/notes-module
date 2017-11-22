@@ -1,20 +1,14 @@
-.note_title_list {
-    display: flex;
-    list-style: none;
-    border: 1px solid lightgray;
-    border-radius: 2px;
+div.note-content-title-container {
+    padding-top: 10px;
+    display: inline-block;
 }
 
-.note_title_list li {
-    min-width: 75px;
+h1.note-title {
+    font-weight: normal;
+    font-size: xx-large;
 }
 
-.note_title_name {
-    font-size: large;
-}
-
-.note_title_date {
-    padding-left: 5%;
-    padding-top: 2px;
-    width: inherit;
+div.note-content-title-container hr {
+    width: 100%;
+    margin-top: -10px;
 }

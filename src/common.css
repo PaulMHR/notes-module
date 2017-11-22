@@ -12,6 +12,10 @@ h1, h2, h3, h4, p {
     font-family: "Calisto MT", serif;
 }
 
+p, ul, ol {
+    font-size: large;
+}
+
 hr {
     width: 200px;
 }
