@@ -1,4 +1,16 @@
-.note_body_container {
+.note-body-container {
     text-align: left;
     padding: 0 15px;
+    position: relative;
+}
+
+.date-div {
+    position: absolute;
+    right: 0;
+    padding-right: 16px;
+    margin-top: -16px;
+}
+
+.note-body-container h2 {
+    margin-bottom: -5px;
 }

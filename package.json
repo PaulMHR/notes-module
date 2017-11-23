@@ -8,6 +8,7 @@
     "redux-devtools": "^3.4.0"
   },
   "dependencies": {
+    "dateformat": "^3.0.2",
     "firebase": "^4.3.0",
     "gh-pages": "^1.0.0",
     "lodash.debounce": "^4.0.8",

@@ -1,5 +1,6 @@
 import React from 'react';
 import Markdown from 'react-markdown';
+import dateFormat from 'dateformat';
 
 import "../styles/NoteBody.css";
 
@@ -19,10 +20,10 @@ let line_is_header = (line) => {
 // TODO fix Markdown parsing for numbered lists. And for lists in general.
 export default ({date, date_note}) => {
 	return (
-		<div className="note_body_container">
-			<div className="date_div">
+		<div className="note-body-container">
+			<div className="date-div">
 				{date !== "null" ?
-					<p>{date}</p> :
+					<p>{dateFormat(new Date(date), 'mmmm dS, yyyy')}</p> :
 					<span></span>
 				}
 			</div>
@@ -32,12 +33,12 @@ export default ({date, date_note}) => {
 				source={date_note.reduce((a, b) => {
 					let lastLine = a.split('\n').slice(-1)[0];
 					let newline = null;
-					console.log(lastLine);
+					//console.log(lastLine);
 					if ((line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || line_is_header(lastLine) || line_is_header(b)) {
-						console.log('double newline!');
+						//console.log('double newline!');
                         newline = '\n\n';
 					} else {
-						console.log('single newline!');
+						//console.log('single newline!');
 						newline = '\n';
 					}
                     //console.log(b);
