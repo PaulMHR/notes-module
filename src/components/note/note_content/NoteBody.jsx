@@ -19,11 +19,12 @@ let line_is_header = (line) => {
 
 // TODO fix Markdown parsing for numbered lists. And for lists in general.
 export default ({date, date_note}) => {
+	let firstLineIsHeader = line_is_header(date_note[0]);
 	return (
 		<div className="note-body-container">
-			<div className="date-div">
+			<div className={(firstLineIsHeader) ? "date-div" : "date-div-no-header"}>
 				{date !== "null" ?
-					<p>{dateFormat(new Date(date), 'mmmm dS, yyyy')}</p> :
+					<p><em>{dateFormat(new Date(date), 'mmmm dS, yyyy')}</em></p> :
 					<span></span>
 				}
 			</div>

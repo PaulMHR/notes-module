@@ -1,14 +1,18 @@
 .note-body-container {
     text-align: left;
     padding: 0 15px;
-    position: relative;
 }
 
 .date-div {
-    position: absolute;
-    right: 0;
-    padding-right: 16px;
+    float: right;
     margin-top: -16px;
+    padding-left: 20px;
+}
+
+.date-div-no-header {
+    float: right;
+    padding-left: 20px;
+    margin-top: -18px;
 }
 
 .note-body-container h2 {
