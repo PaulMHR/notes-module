@@ -8,7 +8,7 @@ let line_begins_with_number_or_bullet = (line) => {
     let accepted_indices = [0, 1, 2];
     let number_re = /\d\./;
     let match = line.match(number_re);
-	return accepted_indices.indexOf(line.indexOf('*')) !== -1 || (match !== null && match.index === 0);
+	return accepted_indices.indexOf(line.indexOf('*')) !== -1 || (match !== null && accepted_indices.indexOf(match.index) !== -1);
 };
 
 let line_is_header = (line) => {
@@ -35,7 +35,7 @@ export default ({date, date_note}) => {
 					let lastLine = a.split('\n').slice(-1)[0];
 					let newline = null;
 					//console.log(lastLine);
-					if ((line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || line_is_header(lastLine) || line_is_header(b)) {
+					if ((!line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || (line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || line_is_header(lastLine) || line_is_header(b)) {
 						//console.log('double newline!');
                         newline = '\n\n';
 					} else {
