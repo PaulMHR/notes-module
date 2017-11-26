@@ -5,7 +5,7 @@ import getEnvironment from '../../environment';
 export default () => (
     <a href={(getEnvironment() === "PROD") ? "/notorious" : "/"} style={{'textDecoration': 'none'}}>
         <div className="logo_div">
-            <p className="logo">N</p>
+            <p className="logo-text">N</p>
         </div>
     </a>
 );
