@@ -12,6 +12,7 @@
     "firebase": "^4.3.0",
     "gh-pages": "^1.0.0",
     "lodash.debounce": "^4.0.8",
+    "material-ui": "^0.19.4",
     "md-to-react": "^0.2.1",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.6.2",

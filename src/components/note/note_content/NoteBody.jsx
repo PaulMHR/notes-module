@@ -17,7 +17,6 @@ let line_is_header = (line) => {
     return (h_match !== null && h_match.index === 0) || (hash_match !== null && hash_match.index === 0);
 };
 
-// TODO fix Markdown parsing for numbered lists. And for lists in general.
 export default ({date, date_note}) => {
 	let firstLineIsHeader = line_is_header(date_note[0]);
 	return (
@@ -43,7 +42,7 @@ export default ({date, date_note}) => {
 						newline = '\n';
 					}
                     //console.log(b);
-					return (a + newline + b).replace(/(h(\d)\.)(.+)/, (match, p1, p2, p3) => '#'.repeat(parseInt(p2)) + ' ' + p3);
+					return (a + newline + b).replace(/(h(\d)\.)(.+)/, (match, p1, p2, p3) => '#'.repeat(parseInt(p2, 10)) + ' ' + p3);
                 })}
 			/>
 		</div>
