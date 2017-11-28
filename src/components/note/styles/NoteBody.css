@@ -16,5 +16,17 @@
 }
 
 .note-body-container h2 {
-    margin-bottom: -5px;
+    margin-bottom: -8px;
+}
+
+.markdown-text-large p, .markdown-text-large ul, .markdown-text-large ol {
+    font-size: large;
+}
+
+.markdown-text-medium p, .markdown-text-medium ul, .markdown-text-medium ol {
+    font-size: medium;
+}
+
+.markdown-text-small p, .markdown-text-small ul, .markdown-text-small ol {
+    font-size: small;
 }

@@ -29,7 +29,7 @@ export default ({date, date_note}) => {
 			</div>
 
 			<Markdown
-				className="markdown-text"
+				className="markdown-text-large"
 				source={date_note.reduce((a, b) => {
 					let lastLine = a.split('\n').slice(-1)[0];
 					let newline = null;

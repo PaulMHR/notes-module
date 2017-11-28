@@ -5,7 +5,7 @@
   "homepage": "http://PaulMHR.github.io/notorious",
   "devDependencies": {
     "react-scripts": "0.8.5",
-    "redux-devtools": "^3.4.0"
+    "redux-devtools": "^3.4.1"
   },
   "dependencies": {
     "dateformat": "^3.0.2",
