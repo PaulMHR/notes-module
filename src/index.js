@@ -4,7 +4,7 @@ import {Provider} from 'react-redux';
 import ReactDOM from 'react-dom';
 import firebase from 'firebase';
 import MainPage from './main';
-import reducer from './reducers';
+import notoriousApp from './reducers';
 
 // Initialize Firebase
 const config = {
@@ -19,7 +19,8 @@ const config = {
 firebase.initializeApp(config);
 
 // Initialize Redux Store
-const store = createStore(reducer);
+const store = createStore(notoriousApp, {options: {fontSize: "LARGE"}},
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
 ReactDOM.render(
     <Provider store={store}>

@@ -1,4 +1,7 @@
 import React from 'react';
+import { connect } from 'react-redux';
+
+import {setFontSize, resetFontSize} from '../../actions/index';
 
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
@@ -8,7 +11,7 @@ import Download from 'material-ui/svg-icons/editor/format-size';
 import ArrowDropRight from 'material-ui/svg-icons/navigation-arrow-drop-right';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 
-const FontSettingsMenu = () => (
+const FontSettingsMenu = ({dispatch}) => (
     <MuiThemeProvider>
         <IconMenu
             iconButtonElement={<IconButton><Download/></IconButton>}
@@ -19,11 +22,11 @@ const FontSettingsMenu = () => (
                 primaryText="Font Size"
                 rightIcon={<ArrowDropRight />}
                 menuItems={[
-                    <MenuItem primaryText="Small" />,
-                    <MenuItem primaryText="Medium" />,
-                    <MenuItem primaryText="Large" />,
+                    <MenuItem primaryText="Small" onClick={() => dispatch(setFontSize("SMALL"))} />,
+                    <MenuItem primaryText="Medium" onClick={() => dispatch(setFontSize("MEDIUM"))} />,
+                    <MenuItem primaryText="Large" onClick={() => dispatch(setFontSize("LARGE"))} />,
                     <Divider />,
-                    <MenuItem primaryText="Reset to Default" />
+                    <MenuItem primaryText="Reset to Default" onClick={() => dispatch(resetFontSize())} />
                 ]}
             />
 
@@ -31,7 +34,7 @@ const FontSettingsMenu = () => (
     </MuiThemeProvider>
 );
 
-export default FontSettingsMenu;
+export default connect()(FontSettingsMenu);
 
 // TODO re-instate FA logo
 /*

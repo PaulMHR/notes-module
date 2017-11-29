@@ -1,6 +1,7 @@
 import React from 'react';
 import Markdown from 'react-markdown';
 import dateFormat from 'dateformat';
+import { connect } from 'react-redux';
 
 import "../styles/NoteBody.css";
 
@@ -17,34 +18,38 @@ let line_is_header = (line) => {
     return (h_match !== null && h_match.index === 0) || (hash_match !== null && hash_match.index === 0);
 };
 
-export default ({date, date_note}) => {
+const mapStateToProps = (state) => {
+    return {
+        font_size: state.options.fontSize
+    }
+};
+
+let NoteBody = ({date, date_note, font_size="LARGE"}) => {
 	let firstLineIsHeader = line_is_header(date_note[0]);
 	return (
 		<div className="note-body-container">
 			<div className={(firstLineIsHeader) ? "date-div" : "date-div-no-header"}>
 				{date !== "null" ?
 					<p><em>{dateFormat(new Date(date), 'mmmm dS, yyyy')}</em></p> :
-					<span></span>
+					<span/>
 				}
 			</div>
 
 			<Markdown
-				className="markdown-text-large"
+				className={"markdown-text-" + font_size.toLowerCase()}
 				source={date_note.reduce((a, b) => {
 					let lastLine = a.split('\n').slice(-1)[0];
 					let newline = null;
-					//console.log(lastLine);
 					if ((!line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || (line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || line_is_header(lastLine) || line_is_header(b)) {
-						//console.log('double newline!');
                         newline = '\n\n';
 					} else {
-						//console.log('single newline!');
 						newline = '\n';
 					}
-                    //console.log(b);
 					return (a + newline + b).replace(/(h(\d)\.)(.+)/, (match, p1, p2, p3) => '#'.repeat(parseInt(p2, 10)) + ' ' + p3);
                 })}
 			/>
 		</div>
     );
-}
+};
+
+export default connect(mapStateToProps)(NoteBody);
