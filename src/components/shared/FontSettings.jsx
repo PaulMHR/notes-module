@@ -7,31 +7,36 @@ import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
 import IconButton from 'material-ui/IconButton';
 import Divider from 'material-ui/Divider';
-import Download from 'material-ui/svg-icons/editor/format-size';
+import SettingsIcon from 'material-ui/svg-icons/action/settings';
 import ArrowDropRight from 'material-ui/svg-icons/navigation-arrow-drop-right';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+//<i class="material-icons">settings_applications</i>
+
+import './styles/FontSettings.css';
 
 const FontSettingsMenu = ({dispatch}) => (
-    <MuiThemeProvider>
-        <IconMenu
-            iconButtonElement={<IconButton><Download/></IconButton>}
-            anchorOrigin={{horizontal: 'left', vertical: 'top'}}
-            targetOrigin={{horizontal: 'left', vertical: 'top'}}
-        >
-            <MenuItem
-                primaryText="Font Size"
-                rightIcon={<ArrowDropRight />}
-                menuItems={[
-                    <MenuItem primaryText="Small" onClick={() => dispatch(setFontSize("SMALL"))} />,
-                    <MenuItem primaryText="Medium" onClick={() => dispatch(setFontSize("MEDIUM"))} />,
-                    <MenuItem primaryText="Large" onClick={() => dispatch(setFontSize("LARGE"))} />,
-                    <Divider />,
-                    <MenuItem primaryText="Reset to Default" onClick={() => dispatch(resetFontSize())} />
-                ]}
-            />
+    <div className="font-settings-menu-container">
+        <MuiThemeProvider>
+            <IconMenu
+                iconButtonElement={<IconButton><SettingsIcon color={"white"}/></IconButton>}
+                anchorOrigin={{horizontal: 'left', vertical: 'top'}}
+                targetOrigin={{horizontal: 'left', vertical: 'top'}}
+            >
+                <MenuItem
+                    primaryText="Font Size"
+                    rightIcon={<ArrowDropRight />}
+                    menuItems={[
+                        <MenuItem primaryText="Small" onClick={() => dispatch(setFontSize("SMALL"))} />,
+                        <MenuItem primaryText="Medium" onClick={() => dispatch(setFontSize("MEDIUM"))} />,
+                        <MenuItem primaryText="Large" onClick={() => dispatch(setFontSize("LARGE"))} />,
+                        <Divider />,
+                        <MenuItem primaryText="Reset to Default" onClick={() => dispatch(resetFontSize())} />
+                    ]}
+                />
 
-        </IconMenu>
-    </MuiThemeProvider>
+            </IconMenu>
+        </MuiThemeProvider>
+    </div>
 );
 
 export default connect()(FontSettingsMenu);
