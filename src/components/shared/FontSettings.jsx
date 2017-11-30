@@ -10,7 +10,6 @@ import Divider from 'material-ui/Divider';
 import SettingsIcon from 'material-ui/svg-icons/action/settings';
 import ArrowDropRight from 'material-ui/svg-icons/navigation-arrow-drop-right';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
-//<i class="material-icons">settings_applications</i>
 
 import './styles/FontSettings.css';
 

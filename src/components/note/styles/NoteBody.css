@@ -19,6 +19,10 @@
     margin-bottom: -8px;
 }
 
+.markdown-text-x-large p, .markdown-text-x-large ul, .markdown-text-x-large ol {
+    font-size: x-large;
+}
+
 .markdown-text-large p, .markdown-text-large ul, .markdown-text-large ol {
     font-size: large;
 }
