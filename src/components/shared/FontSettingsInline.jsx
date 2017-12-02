@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 
 import {setFontSize, resetFontSize} from '../../actions/index';
 
+import './styles/FontSettingsInline.css';
+
 const mapStateToProps = state => ({
     currentFontSize: state.options.fontSize
 });

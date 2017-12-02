@@ -12,7 +12,8 @@ class NoteIndex extends React.Component {
         super();
         this.state = {
             subject: match.params.courseId.replace('_', ' '),
-            course_content_by_units: undefined
+            course_content_by_units: undefined,
+            loading: true
         };
     }
 
@@ -25,13 +26,21 @@ class NoteIndex extends React.Component {
                     this.setState({...this.state, course_content_by_units: snapshot_val[snapshot_keys[i]]["course_content_by_units"]});
                 }
             }
+            this.setState({...this.state, loading: false});
         });
     }
 
     render() {
         return (
             <div className="view_div">
-                {this.state.course_content_by_units !== undefined
+                {this.state.loading ?
+                    <div>
+                        <NotesHeader subject={this.state.subject} />
+                        <p>Loading...</p>
+                        <p>(This should only take a minute or so.)</p>
+                    </div>
+                    :
+                    this.state.course_content_by_units !== undefined
                     ?
                     <div>
                         <NotesHeader subject={this.state.subject} />
