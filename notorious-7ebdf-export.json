@@ -6,6 +6,19 @@
   },
   "notes": {
     "ENGL 251B": {
+      "course_name": "ENGL 251B",
+      "is_online": "True",
+      "taken": "Spring Term 2017, 3B",
+      "introduction" : [
+        "## Overview",
+        "Where ENGL 251A analyzes poetry and prose microscopically, ENGL 251B targets the big picture of literary theory.",
+        "* Covers some of the biggest theories that concern literary criticism",
+        "* Dives into some theories of linguistics, which is mightily appreciated",
+        "* Offers the best explanation of Marxism and Psychoanalysis that I've ever heard in a university course",
+        "* Has made me tell my friends about Structuralism whenever I get the chance",
+        "## Advice for Studying",
+        "If you can understand the gist of all the theories in this course, you're halfway there! Keep in mind how different theories will analyze and understand literature differently. Marxism will look for signs of class conflict within a text, Feminist Literary Critics will tend to analyze how gender is portrayed, and Structuralists usually analyze the broader structures and patterns within a plot."
+      ],
       "course_content_by_units": {
         "2 What is Literature?": {
           "null": [
@@ -273,12 +286,24 @@
             "Symptom: indirect, coded expressions of some conflict in the text, something it’s trying to repress."
           ]
         }
-      },
-      "course_name": "ENGL 251B",
-      "is_online": "True",
-      "taken": "Spring Term 2017, 3B"
+      }
     },
     "CS 241": {
+      "course_name" : "CS 241",
+      "is_online" : "False",
+      "taken" : "Fall Term 2016, 3A",
+      "instructor" : "Troy Vasiga",
+      "introduction" : [
+        "## Overview",
+        "'Introduction to Sequential Programming' doesn't put justice to the enormous breadth of content CS 241 really covers. This was the course that taught me how machine code, assembly languages, and human-readable programming languages all relate to each other. It's tough as anything you've faced before, but it gives you a foundational understanding of how code ever works in the first place.",
+        "* Complimentary to CS 251: where CS 251 goes into the hardware details of machine code, this course only goes as low-level as writing machine code in hexadecimal.",
+        "* Covers the entire process of transforming code in a simplistic computer language into machine code, including the processes of",
+        "\t* Assemblers",
+        "\t* Parsers",
+        "\t* Compilers",
+        "## Advice for Studying",
+        "This course is based on its assignments: if you understand the processes behind your assignments, you've essentially finished your studying. Best of luck with that!"
+      ],
       "course_content_by_units": {
         "1 Introduction": {
           "09-07-2016": [
@@ -2854,13 +2879,22 @@
             "Just say what is right and ignore the rest."
           ]
         }
-      },
-      "course_name" : "CS 241",
-      "is_online" : "False",
-      "taken" : "Fall Term 2016, 3A",
-      "instructor" : "Troy Vasiga"
+      }
     },
     "ENGL 200A": {
+      "course_name": "ENGL 200A",
+      "is_online": "False",
+      "taken": "Fall Term 2016, 3A",
+      "introduction": [
+        "## Overview",
+        "ENGL 200A quickly surveys the biggest hits of English literature from the time of Beowulf all the way up to the year 1800.",
+        "* Surveys some of the greatest minds of English literature, including Shakespeare, Milton, and Chaucer",
+        "* Pairs well with the introduction to Literary Theory courses, which give you the tools to analyze the text",
+        "* Readings are critical to this course: falling behind on a reading means you probably won't be able to participate much in in-class discussions on the text",
+        "* Makes reading Shakespeare in High School look easy in comparison to the reading assignment for Chaucer",
+        "## Advice for Studying",
+        "These notes aren't the authoritative word for what to study for in this course; they're recordings of the conversations I had in my own term when I took the course. Treat the subject matter of the notes as promptings for different ideas that might come up in essay questions or discussions"
+      ],
       "course_content_by_units": {
         "1 Introduction" : {
           "09-07-2016": [
@@ -3379,12 +3413,24 @@
             "Great. Just, great."
           ]
         }
-      },
-      "course_name": "ENGL 200A",
-      "is_online": "False",
-      "taken": "Fall Term 2016, 3A"
+      }
     },
     "CS 350": {
+      "course_name": "CS 350",
+      "is_online": "False",
+      "taken": "Spring Term 2017, 3B",
+      "instructor": "Lesley Istead",
+      "introduction": [
+        "## Overview",
+        "Many people say the Operating Systems is 'the first real programming course' at Waterloo. While I'm a bit dubious as to how true that actually is, it succeeds in delivering a fundamental understanding of what an Operating System is and what goes on under the hood of a modern operating system.",
+        "* Provides a foundational understanding behind threads, processes, and concurrency",
+        "* Goes into detail about memory implementation within the system",
+        "## Advice for Studying",
+        "An understanding of the core concepts in each module is what's really key for preparing. Before walking into the exam should be able to at least confidently explain:",
+        "\t* Concurrency: what a thread is, what a process is, and how the CPU might juggle multiple processes with multiple threads",
+        "\t* Virtual Memory: what the four approaches to Virtual Memory are, what advantages and disadvantages each has, and what kind of fragmentation each produces",
+        "\t* Devices: what devices are, and how the kernel interacts with devices to grab information and deliver instructions"
+      ],
       "course_content_by_units" : {
         "1 Introduction" : {
           "null": [
@@ -3697,10 +3743,7 @@
             "Another response to crash inconsistency is _journalling_*, where file system meta-data changes are written toa  journal, so sequence of operations can be written all at once. After a failure, redo the journalled changes."
           ]
         }
-      },
-      "course_name": "CS 350",
-      "is_online": "False",
-      "taken": "Spring Term 2017, 3B"
+      }
     }
   }
 }
