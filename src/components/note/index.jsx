@@ -14,7 +14,8 @@ class NoteIndex extends React.Component {
         this.state = {
             subject: match.params.courseId.replace('_', ' '),
             course_content_by_units: undefined,
-            loading: true
+            loading: true,
+            found: false
         };
     }
 
@@ -29,7 +30,8 @@ class NoteIndex extends React.Component {
                         taken : snapshot_val[snapshot_keys[i]]["taken"],
                         instructor : snapshot_val[snapshot_keys[i]]["instructor"],
                         introduction : snapshot_val[snapshot_keys[i]]["introduction"],
-                        course_content_by_units: snapshot_val[snapshot_keys[i]]["course_content_by_units"]});
+                        course_content_by_units: snapshot_val[snapshot_keys[i]]["course_content_by_units"],
+                        found: true});
                 }
             }
             this.setState({...this.state, loading: false});
@@ -37,7 +39,6 @@ class NoteIndex extends React.Component {
     }
 
     render() {
-        console.log(this.state.introduction);
         return (
             <div className="view_div">
                 {this.state.loading ?
@@ -47,7 +48,7 @@ class NoteIndex extends React.Component {
                         <p>(This should only take a minute or so.)</p>
                     </div>
                     :
-                    this.state.course_content_by_units !== undefined
+                    this.state.found
                     ?
                     <div>
                         <NotesHeader
@@ -56,7 +57,9 @@ class NoteIndex extends React.Component {
                             taken={this.state.taken}
                             instructor={this.state.instructor}
                             introduction={this.state.introduction} />
-                        {Object.keys(this.state.course_content_by_units)
+                        {(this.state.course_content_by_units === undefined || this.state.course_content_by_units === null)
+                            ? <div/>
+                            : Object.keys(this.state.course_content_by_units)
                             .sort((a,b) => {
                                 const a_int = parseInt(a.split(' ')[0], 10);
                                 const b_int = parseInt(b.split(' ')[0], 10);

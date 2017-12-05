@@ -12,6 +12,11 @@ h1, h2, h3, h4, p, ul, ol {
     font-family: "Calisto MT", serif;
 }
 
+button {
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
 p, ul, ol {
     font-size: large;
 }

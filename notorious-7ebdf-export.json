@@ -2,9 +2,20 @@
   "Hello": "Are you there?",
   "courses": {
     "ENGL 251B": "Introduction to British Literature II",
-    "CS 241": "Foundations of Sequential Programs"
+    "CS 241": "Foundations of Sequential Programs",
+    "ENGL 200A": "Survey of British Literature I",
+    "CS 350": "Introduction to Operating Systems"
   },
   "notes": {
+    "About": {
+      "course_name": "About",
+      "introduction" : [
+        "## The Author",
+        "Hey there! I'm a 3B Computer Science student at the University of Waterloo. I'm aiming for a CS degree, but also study English on the side as a very expensive hobby. I also made this website and wrote all the notes. Y'know, just in case you were wondering.",
+        "## The Mission",
+        "I made Notorious to lend a helping hand to anyone in the same boat I was: struggling to study for, or even understand, some of the tougher courses at the University of Waterloo. These notes aren't meant to substitute being in the courses themselves, or doing your own studying, but they certainly are meant to help supplement your studies. So, I hope it helps!"
+      ]
+    },
     "ENGL 251B": {
       "course_name": "ENGL 251B",
       "is_online": "True",
