@@ -24,6 +24,25 @@ const mapStateToProps = (state) => {
     }
 };
 
+let parseMarkdownText = (date_note) => {
+    let original_output = date_note.reduce((a, b) => {
+        let lastLine = a.split('\n').slice(-1)[0];
+        let newline = null;
+        if ((!line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || (line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || line_is_header(lastLine) || line_is_header(b)) {
+            newline = '\n\n';
+        } else {
+            newline = '\n';
+        }
+        return (a + newline + b).replace(/(h(\d)\.)(.+)/, (match, p1, p2, p3) => '#'.repeat(parseInt(p2, 10)) + ' ' + p3);
+    });
+
+    let split_note = original_output.split(/(?:\n+<<|>>\n+)/);
+
+	console.log(split_note);
+
+	return split_note;
+};
+
 let NoteBody = ({date, date_note, font_size="LARGE"}) => {
 	let firstLineIsHeader = line_is_header(date_note[0]);
 	return (
@@ -35,19 +54,17 @@ let NoteBody = ({date, date_note, font_size="LARGE"}) => {
 				}
 			</div>
 
-			<Markdown
-				className={"markdown-text-" + font_size.toLowerCase()}
-				source={date_note.reduce((a, b) => {
-					let lastLine = a.split('\n').slice(-1)[0];
-					let newline = null;
-					if ((!line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || (line_begins_with_number_or_bullet(lastLine) && !line_begins_with_number_or_bullet(b)) || line_is_header(lastLine) || line_is_header(b)) {
-                        newline = '\n\n';
-					} else {
-						newline = '\n';
-					}
-					return (a + newline + b).replace(/(h(\d)\.)(.+)/, (match, p1, p2, p3) => '#'.repeat(parseInt(p2, 10)) + ' ' + p3);
-                })}
-			/>
+			{parseMarkdownText(date_note).map(input => {
+				if (input.match(/.+\.(jpg|png|gif)/)) {
+					return <img src={'images/' + input} />;
+                } else {
+					return <Markdown
+						className={"markdown-text-" + font_size.toLowerCase()}
+						source={input}
+					/>;
+                }
+            })}
+
 		</div>
     );
 };
