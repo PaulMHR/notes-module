@@ -45,6 +45,7 @@ let parseMarkdownText = (date_note) => {
 
 let NoteBody = ({date, date_note, font_size="LARGE"}) => {
 	let firstLineIsHeader = line_is_header(date_note[0]);
+	let key_iterator = 0;
 	return (
 		<div className="note-body-container">
 			<div className={(firstLineIsHeader) ? "date-div" : "date-div-no-header"}>
@@ -55,10 +56,19 @@ let NoteBody = ({date, date_note, font_size="LARGE"}) => {
 			</div>
 
 			{parseMarkdownText(date_note).map(input => {
-				if (input.match(/.+\.(jpg|png|gif)/)) {
-					return <img src={'images/' + input} />;
+			    key_iterator++;
+				if (input.match(/.+\.(jpg|png|gif) alt='.+' caption='.*'/)) {
+				    let filename = input.match(/.+\.(?:jpg|png|gif)/);
+				    let alt = input.match(/alt='.+'/);
+				    let caption = input.match(/caption='(.+)'/);
+					return (
+					    <div key={key_iterator} className="note-body-img-container">
+					        <img className="note-body-img" src={'images/' + filename} alt={alt}/>
+                            <p className="note-body-img-caption">{caption[1]}</p>
+                        </div>
+                    );
                 } else {
-					return <Markdown
+					return <Markdown key={key_iterator}
 						className={"markdown-text-" + font_size.toLowerCase()}
 						source={input}
 					/>;

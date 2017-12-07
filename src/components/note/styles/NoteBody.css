@@ -34,3 +34,16 @@
 .markdown-text-small p, .markdown-text-small ul, .markdown-text-small ol {
     font-size: small;
 }
+
+.note-body-img-container {
+    width: 100%;
+    text-align: center;
+}
+
+.note-body-img {
+
+}
+
+.note-body-img-caption {
+    font-size: small;
+}
