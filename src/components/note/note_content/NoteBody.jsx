@@ -38,8 +38,6 @@ let parseMarkdownText = (date_note) => {
 
     let split_note = original_output.split(/(?:\n+<<|>>\n+)/);
 
-	console.log(split_note);
-
 	return split_note;
 };
 

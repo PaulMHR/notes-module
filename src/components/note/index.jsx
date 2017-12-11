@@ -1,5 +1,6 @@
 import React from 'react';
 import firebase from 'firebase';
+import { connect } from 'react-redux';
 
 import Note from './note_content/index';
 import NotesHeaderTitle from './note_header/NoteHeaderTitle';
@@ -8,14 +9,21 @@ import NotFoundPage from './NotFoundPage';
 
 import "../../common.css";
 
+const mapStateToProps = (state) => {
+    return {
+        bingeMode: state.options.bingeMode
+    }
+};
+
 class NoteIndex extends React.Component {
-    constructor({match}) {
+    constructor({match, bingeMode}) {
         super();
         this.state = {
             subject: match.params.courseId.replace('_', ' '),
             course_content_by_units: undefined,
             loading: true,
-            found: false
+            found: false,
+            bingeMode: bingeMode
         };
     }
 
@@ -38,7 +46,7 @@ class NoteIndex extends React.Component {
         });
     }
 
-    render() {
+    bingeModeRender() {
         return (
             <div className="view_div">
                 {this.state.loading ?
@@ -49,38 +57,44 @@ class NoteIndex extends React.Component {
                     </div>
                     :
                     this.state.found
-                    ?
-                    <div>
-                        <NotesHeader
-                            subject={this.state.subject}
-                            is_online={this.state.is_online}
-                            taken={this.state.taken}
-                            instructor={this.state.instructor}
-                            introduction={this.state.introduction} />
-                        {(this.state.course_content_by_units === undefined || this.state.course_content_by_units === null)
-                            ? <div/>
-                            : Object.keys(this.state.course_content_by_units)
-                            .sort((a,b) => {
-                                const a_int = parseInt(a.split(' ')[0], 10);
-                                const b_int = parseInt(b.split(' ')[0], 10);
-                                if (a_int < b_int) {
-                                    return -1;
-                                } else if (a_int > b_int) {
-                                    return 1;
-                                } else {
-                                    return 0;
-                                }
-                            })
-                            .map((key) =>
-                                <Note key={key} title={key} unit_content={this.state.course_content_by_units[key]} />)}
-                    </div>
-                    :
-                    <NotFoundPage/>
+                        ?
+                        <div>
+                            <NotesHeader
+                                subject={this.state.subject}
+                                is_online={this.state.is_online}
+                                taken={this.state.taken}
+                                instructor={this.state.instructor}
+                                introduction={this.state.introduction} />
+                            {(this.state.course_content_by_units === undefined || this.state.course_content_by_units === null)
+                                ? <div/>
+                                : Object.keys(this.state.course_content_by_units)
+                                    .sort((a,b) => {
+                                        const a_int = parseInt(a.split(' ')[0], 10);
+                                        const b_int = parseInt(b.split(' ')[0], 10);
+                                        if (a_int < b_int) {
+                                            return -1;
+                                        } else if (a_int > b_int) {
+                                            return 1;
+                                        } else {
+                                            return 0;
+                                        }
+                                    })
+                                    .map((key) =>
+                                        <Note key={key} title={key} unit_content={this.state.course_content_by_units[key]} />)}
+                        </div>
+                        :
+                        <NotFoundPage/>
                 }
             </div>
         );
     }
+
+    render() {
+        if (this.state.bingeMode) {
+            return this.bingeModeRender();
+        }
+    }
 }
 
 
-export default NoteIndex;
+export default connect(mapStateToProps)(NoteIndex);

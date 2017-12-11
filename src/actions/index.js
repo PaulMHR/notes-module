@@ -21,3 +21,12 @@ export const setFontSize = (fontSize) => ({
 export const resetFontSize = () => ({
     type: 'RESET_FONT_SIZE'
 });
+
+export const setBingeMode = (bingeMode) => ({
+    type: 'SET_BINGE_MODE',
+    bingeMode
+});
+
+export const resetBingeMode = ({
+    type: 'RESET_BINGE_MODE'
+});
