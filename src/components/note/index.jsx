@@ -6,6 +6,7 @@ import Note from './note_content/index';
 import NotesHeaderTitle from './note_header/NoteHeaderTitle';
 import NotesHeader from './note_header/index';
 import NotFoundPage from './NotFoundPage';
+import NoteSidebar from './note_sidebar/index';
 
 import "../../common.css";
 
@@ -89,10 +90,41 @@ class NoteIndex extends React.Component {
         );
     }
 
+    w3_open() {
+        console.log('open');
+        document.getElementById("main").style.marginLeft = "25%";
+        document.getElementById("mySidebar").style.width = "25%";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+    }
+
+    splitModeRender() {
+        return (
+            <div>
+                <NoteSidebar/>
+                <div id="main">
+
+                    <div className="w3-teal">
+                        <button id="openNav" className="w3-button w3-teal w3-xlarge" onClick={this.w3_open}>&#9776;</button>
+                        <div className="w3-container">
+                            <h1>My Page</h1>
+                        </div>
+                    </div>
+
+                        <div className="w3-container">
+                            <p>In this example, the sidebar is hidden (style="display:none")</p>
+                            <p>It is shown when you click on the menu icon in the top left corner.</p>
+                            <p>When it is opened, it shifts the page content to the right.</p>
+                            <p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the width of the sidebar.</p>
+                        </div>
+
+                </div>
+            </div>
+        );
+    }
+
     render() {
-        if (this.state.bingeMode) {
-            return this.bingeModeRender();
-        }
+        return (this.state.bingeMode) ? this.bingeModeRender() : this.splitModeRender();
     }
 }
 
