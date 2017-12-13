@@ -21,6 +21,7 @@ class NoteIndex extends React.Component {
         super();
         this.state = {
             subject: match.params.courseId.replace('_', ' '),
+            unit: match.params.unitId,
             course_content_by_units: undefined,
             loading: true,
             found: false,
@@ -90,37 +91,40 @@ class NoteIndex extends React.Component {
         );
     }
 
-    w3_open() {
-        console.log('open');
-        document.getElementById("main").style.marginLeft = "25%";
-        document.getElementById("mySidebar").style.width = "25%";
-        document.getElementById("mySidebar").style.display = "block";
-        document.getElementById("openNav").style.display = 'none';
+    convertUnitIntoId(unitName) {
+        return unitName.replace(' ', '-').replace(/[?&]/, '').toLowerCase();
     }
 
     splitModeRender() {
-        return (
-            <div>
-                <NoteSidebar/>
-                <div id="main">
-
-                    <div className="w3-teal">
-                        <button id="openNav" className="w3-button w3-teal w3-xlarge" onClick={this.w3_open}>&#9776;</button>
-                        <div className="w3-container">
-                            <h1>My Page</h1>
-                        </div>
-                    </div>
-
-                        <div className="w3-container">
-                            <p>In this example, the sidebar is hidden (style="display:none")</p>
-                            <p>It is shown when you click on the menu icon in the top left corner.</p>
-                            <p>When it is opened, it shifts the page content to the right.</p>
-                            <p>We use JavaScript to add a 25% left margin to the div element with id="main" when this happens. The value "25%" matches the width of the sidebar.</p>
-                        </div>
-
+        if (this.state.loading) {
+            return (
+                <div className="view_div">
+                    <NotesHeaderTitle subject={this.state.subject} />
+                    <p>Loading...</p>
+                    <p>(This should only take a minute or so.)</p>
                 </div>
-            </div>
-        );
+            );
+        } else if (this.state.unit === undefined) {
+            return (
+                <div className="view_div">
+                    {this.state.found
+                        ?
+                        <div>
+                            <NotesHeader
+                                subject={this.state.subject}
+                                is_online={this.state.is_online}
+                                taken={this.state.taken}
+                                instructor={this.state.instructor}
+                                introduction={this.state.introduction} />
+                        </div>
+                        :
+                        <NotFoundPage/>
+                    }
+                </div>
+            );
+        } else {
+
+        }
     }
 
     render() {

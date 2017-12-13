@@ -13,8 +13,9 @@ let devRouter = () => (
         <div className="route_div">
             <Route exact={true} path="/" component={MainMenu} />
             <Route exact={true} path="/about" component={About} />
-            <Route path="/note/:courseId" component={Note} />
-            <Route path="/editor" component={Editor} />
+            <Route exact={true} path="/note/:courseId" component={Note} />
+            <Route exact={true} path="/note/:courseId/u/:unitId" component={Note} />
+            <Route exact={true} path="/editor" component={Editor} />
         </div>
     </Router>
 );
@@ -24,7 +25,8 @@ let productionRouter = () => (
         <div className="route_div">
             <Route exact={true} path="/notorious" component={MainMenu} />
             <Route exact={true} path="/notorious/about" component={About} />
-            <Route path="/notorious/note/:courseId" component={Note} />
+            <Route exact={true} path="/notorious/note/:courseId" component={Note} />
+            <Route exact={true} path="/notorious/note/:courseId/u/:unitId" component={Note} />
         </div>
     </Router>
 );
