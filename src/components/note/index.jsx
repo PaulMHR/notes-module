@@ -122,8 +122,35 @@ class NoteIndex extends React.Component {
                     }
                 </div>
             );
-        } else {
-
+        } else if (this.state.unit !== undefined) {
+            console.log(this.state.unit);
+            let sortedKeys = Object.keys(this.state.course_content_by_units)
+                .sort((a,b) => {
+                    const a_int = parseInt(a.split(' ')[0], 10);
+                    const b_int = parseInt(b.split(' ')[0], 10);
+                    if (a_int < b_int) {
+                        return -1;
+                    } else if (a_int > b_int) {
+                        return 1;
+                    } else {
+                        return 0;
+                    }
+                });
+            console.log(sortedKeys
+                .map((key) => this.convertUnitIntoId(key)));
+            let keyIndex = sortedKeys
+                .map((key) => this.convertUnitIntoId(key))
+                .indexOf(this.state.unit);
+            return (
+                <div className="view_div">
+                    {this.state.found && keyIndex !== -1
+                        ?
+                        <Note key={sortedKeys[keyIndex]} title={sortedKeys[keyIndex]} unit_content={this.state.course_content_by_units[sortedKeys[keyIndex]]} />
+                        :
+                        <NotFoundPage/>
+                    }
+                </div>
+            );
         }
     }
 

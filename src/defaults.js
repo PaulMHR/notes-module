@@ -1,5 +1,5 @@
 export const defaultFontSize = 'LARGE';
-export const defaultBingeMode = false; // TODO flip when note-splitting system is implemented
+export const defaultBingeMode = false;
 
 const defaultOptions = {
     options: {
