@@ -1,0 +1,9 @@
+.sidebar-container {
+    background-color: gray;
+    width: 175px;
+    position: fixed;
+    top: 45px;
+    left: 0;
+    bottom: 0;
+    overflow: scroll;
+}

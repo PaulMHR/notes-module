@@ -6,7 +6,6 @@ import Note from './note_content/index';
 import NotesHeaderTitle from './note_header/NoteHeaderTitle';
 import NotesHeader from './note_header/index';
 import NotFoundPage from './NotFoundPage';
-import NoteSidebar from './note_sidebar/index';
 
 import "../../common.css";
 
@@ -123,7 +122,6 @@ class NoteIndex extends React.Component {
                 </div>
             );
         } else if (this.state.unit !== undefined) {
-            console.log(this.state.unit);
             let sortedKeys = Object.keys(this.state.course_content_by_units)
                 .sort((a,b) => {
                     const a_int = parseInt(a.split(' ')[0], 10);
@@ -136,8 +134,6 @@ class NoteIndex extends React.Component {
                         return 0;
                     }
                 });
-            console.log(sortedKeys
-                .map((key) => this.convertUnitIntoId(key)));
             let keyIndex = sortedKeys
                 .map((key) => this.convertUnitIntoId(key))
                 .indexOf(this.state.unit);

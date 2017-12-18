@@ -1,10 +1,23 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import FixedMenu from './components/shared/FixedMenu';
+import Sidebar from './components/shared/Sidebar';
 import NotoriousRoute from './route';
 
-export default () => (
+const mapStateToProps = (state) => {
+    return {
+        displaySidebar: !state.options.bingeMode
+    }
+};
+
+const main = ({displaySidebar}) => (
     <div>
         <FixedMenu/>
+        {displaySidebar
+        ? <Sidebar title="Hello! This is a title." items={['1', '2', '3']}/>
+        : <Sidebar empty/>}
         <NotoriousRoute/>
     </div>
 );
+
+export default connect(mapStateToProps)(main);

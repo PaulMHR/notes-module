@@ -11,6 +11,8 @@ import Editor from './components/editor/index';
 let devRouter = () => (
     <Router>
         <div className="route_div">
+            <input id="slide-sidebar" type="checkbox" role="button" />
+            <label for="slide-sidebar"><span>close</span></label>
             <Route exact={true} path="/" component={MainMenu} />
             <Route exact={true} path="/about" component={About} />
             <Route exact={true} path="/note/:courseId" component={Note} />

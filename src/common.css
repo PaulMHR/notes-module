@@ -3,9 +3,17 @@
 }
 
 .view_div {
-    margin: 40px 100px;
+    margin: 0 100px;
     padding: 10px 0;
     background-color: whitesmoke;
+
+    position: absolute;
+    top: 45px;
+    left: 175px;
+}
+
+input#slide-sidebar:checked ~ .view_div {
+    left: 0;
 }
 
 h1, h2, h3, h4, p, ul, ol {

@@ -3,12 +3,21 @@ const current = (state = {}, action) => {
         case 'SET_CURRENT_COURSE':
             return {
                 ...state,
-                courseCode: action.courseCode
+                courseCode: action.courseCode,
+                onCourse: true
             };
         case 'SET_CURRENT_UNIT':
             return {
                 ...state,
-                unit: action.unit
+                unit: action.unit,
+                onCourse: true
+            };
+        case 'RESET_CURRENT_COURSE_AND_UNIT':
+            return {
+                ...state,
+                courseCode: null,
+                unit: null,
+                onCourse: false
             };
         default:
             return state;
