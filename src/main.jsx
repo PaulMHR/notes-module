@@ -6,7 +6,7 @@ import NotoriousRoute from './route';
 
 const mapStateToProps = (state) => {
     return {
-        displaySidebar: !state.options.bingeMode
+        displaySidebar: !state.options.bingeMode && state.current.onCourse
     }
 };
 
@@ -15,7 +15,7 @@ const main = ({displaySidebar}) => (
         <FixedMenu/>
         {displaySidebar
         ? <Sidebar title="Hello! This is a title." items={['1', '2', '3']}/>
-        : <Sidebar empty/>}
+        : <div/>}
         <NotoriousRoute/>
     </div>
 );

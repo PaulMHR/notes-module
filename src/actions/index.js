@@ -1,11 +1,16 @@
 export const setCurrentCourse = (courseCode) => ({
     type: 'SET_CURRENT_COURSE',
-    courseCode
+    courseCode,
+    unit: "Introduction"
 });
 
 export const setCurrentUnit = (unit) => ({
     type: 'SET_CURRENT_UNIT',
     unit
+});
+
+export const resetCurrentCourseAndUnit = () => ({
+    type: 'RESET_CURRENT_COURSE_AND_UNIT'
 });
 
 export const setSearchTerm = (searchTerm) => ({

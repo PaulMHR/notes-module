@@ -4,6 +4,7 @@ const current = (state = {}, action) => {
             return {
                 ...state,
                 courseCode: action.courseCode,
+                unit: action.unit,
                 onCourse: true
             };
         case 'SET_CURRENT_UNIT':

@@ -1,36 +1,50 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { connect } from 'react-redux';
+
 import getEnvironment from './environment';
 import './common.css';
 
 import MainMenu from './components/main_menu/index';
 import About from './components/about/index';
 import Note from './components/note/index';
-import Editor from './components/editor/index';
 
-let devRouter = () => (
+import {setCurrentCourse,
+    setCurrentUnit,
+    resetCurrentCourseAndUnit} from "./actions/index";
+
+const mapStateToProps = (state) => {
+    return {
+        displaySidebar: !state.options.bingeMode && state.current.onCourse
+    }
+};
+
+const ReduxRoute = ({component: Component, path, onMatch, ...rest}) => (
+    <Route {...rest}
+        path={(getEnvironment() === "PROD") ? '/notorious' + path : path}
+        render={props => {
+            onMatch(props.match);
+            return <Component {...props} />;
+        }}
+    />
+);
+
+let router = ({displaySidebar, dispatch}) => (
     <Router>
         <div className="route_div">
-            <input id="slide-sidebar" type="checkbox" role="button" />
-            <label for="slide-sidebar"><span>close</span></label>
-            <Route exact={true} path="/" component={MainMenu} />
-            <Route exact={true} path="/about" component={About} />
-            <Route exact={true} path="/note/:courseId" component={Note} />
-            <Route exact={true} path="/note/:courseId/u/:unitId" component={Note} />
-            <Route exact={true} path="/editor" component={Editor} />
+            <input id="slide-sidebar" type="checkbox" role="button" checked={!displaySidebar} />
+            <label><span>close</span></label>
+
+            <ReduxRoute exact={true} path="/" component={MainMenu}
+                        onMatch={() => dispatch(resetCurrentCourseAndUnit())} />
+            <ReduxRoute exact={true} path="/about" component={About}
+                        onMatch={() => dispatch(resetCurrentCourseAndUnit())} />
+            <ReduxRoute exact={true} path="/note/:courseId" component={Note}
+                        onMatch={(match) => dispatch(setCurrentCourse(match.courseId))} />
+            <ReduxRoute exact={true} path="/note/:courseId/u/:unitId" component={Note}
+                        onMatch={(match) => dispatch(setCurrentUnit(match.unitId))} />
         </div>
     </Router>
 );
 
-let productionRouter = () => (
-    <Router>
-        <div className="route_div">
-            <Route exact={true} path="/notorious" component={MainMenu} />
-            <Route exact={true} path="/notorious/about" component={About} />
-            <Route exact={true} path="/notorious/note/:courseId" component={Note} />
-            <Route exact={true} path="/notorious/note/:courseId/u/:unitId" component={Note} />
-        </div>
-    </Router>
-);
-
-export default (getEnvironment() === "PROD") ? productionRouter : devRouter;
+export default connect(mapStateToProps)(router);
