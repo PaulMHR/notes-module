@@ -10,7 +10,7 @@ const mapStateToProps = (state) => {
 };
 
 const NoteSidebar = ({title}) => (
-    <Sidebar title={title} items={['1', '2', '3']} />
+    <Sidebar title={title} />
 );
 
 export default connect(mapStateToProps)(NoteSidebar);

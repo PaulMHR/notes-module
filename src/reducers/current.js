@@ -4,6 +4,7 @@ const current = (state = {}, action) => {
             return {
                 ...state,
                 courseCode: action.courseCode,
+                units: action.units,
                 unit: action.unit,
                 onCourse: true
             };
