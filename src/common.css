@@ -9,7 +9,7 @@
 
     position: absolute;
     top: 46px;
-    left: 175px;
+    left: 25%;
 }
 
 input#slide-sidebar:checked ~ .view_div {

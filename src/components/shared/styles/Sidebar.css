@@ -1,11 +1,12 @@
 .sidebar-container {
     background-color: #EEEEEE;
-    width: 175px;
+    width: 25%;
     position: fixed;
     top: 46px;
     left: 0;
     bottom: 0;
     overflow: scroll;
+    z-index: 50;
 }
 
 .sidebar-header-container, .sidebar-container p {
