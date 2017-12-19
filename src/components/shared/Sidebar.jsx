@@ -7,12 +7,16 @@ export default ({title, items, empty}) => (
         {empty
             ? <span/>
             :
-            <div><h1>{title}</h1>
-            <ul>
-            {items.map((item) => (
-                <li key={items.indexOf(item)}>{item}</li>
-            ))}
-            </ul></div>
+            <div>
+                <div className="sidebar-header-container">
+                    <h1>{title}</h1>
+                </div>
+                <ul>
+                {items.map((item) => (
+                    <li key={items.indexOf(item)}>{item}</li>
+                ))}
+                </ul>
+            </div>
         }
     </div>
 );

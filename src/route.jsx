@@ -40,9 +40,9 @@ let router = ({displaySidebar, dispatch}) => (
             <ReduxRoute exact={true} path="/about" component={About}
                         onMatch={() => dispatch(resetCurrentCourseAndUnit())} />
             <ReduxRoute exact={true} path="/note/:courseId" component={Note}
-                        onMatch={(match) => dispatch(setCurrentCourse(match.courseId))} />
+                        onMatch={(match) => dispatch(setCurrentCourse(match.params.courseId))} />
             <ReduxRoute exact={true} path="/note/:courseId/u/:unitId" component={Note}
-                        onMatch={(match) => dispatch(setCurrentUnit(match.unitId))} />
+                        onMatch={(match) => dispatch(setCurrentUnit(match.params.unitId))} />
         </div>
     </Router>
 );

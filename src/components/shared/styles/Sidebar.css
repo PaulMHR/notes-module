@@ -1,5 +1,5 @@
 .sidebar-container {
-    background-color: gray;
+    background-color: #EEEEEE;
     width: 175px;
     position: fixed;
     top: 46px;
@@ -7,3 +7,14 @@
     bottom: 0;
     overflow: scroll;
 }
+
+.sidebar-header-container {
+    text-align: center;
+}
+
+.sidebar-container ul {
+    list-style: none;
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
