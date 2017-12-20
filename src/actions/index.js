@@ -4,6 +4,11 @@ export const setCurrentCourse = (courseCode) => ({
     unit: "Introduction"
 });
 
+export const setCurrentCourseUnits = (units) => ({
+    type: 'SET_CURRENT_COURSE_UNITS',
+    units
+});
+
 export const setCurrentUnit = (unit) => ({
     type: 'SET_CURRENT_UNIT',
     unit

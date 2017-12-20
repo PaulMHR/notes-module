@@ -1,8 +1,16 @@
 import getEnvironment from './environment';
 
-let getPageLink = (page) => {
+import {convertUnitIntoId} from "./utils";
+
+let getPageLink = (page, params = {}) => {
     let page_affix;
     switch(page) {
+        case "NOTE-UNIT":
+            console.log(params);
+            page_affix = (params.unit === "1 Introduction")
+                ? '/note/' + params.courseId
+                : '/note/' + params.courseId + '/u/' + convertUnitIntoId(params.unit);
+            break;
         case "ABOUT":
             page_affix = "/about";
             break;

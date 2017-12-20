@@ -1,5 +1,7 @@
 import React from 'react';
 
+import getPageLink from '../../links';
+
 import './styles/Sidebar.css';
 
 export default ({title, items, empty}) => (
@@ -11,13 +13,17 @@ export default ({title, items, empty}) => (
                 <div className="sidebar-header-container">
                     <h1>{title}</h1>
                 </div>
-                {items === undefined
+                {title === undefined || items === undefined
                     ? <p><i>(No items in sidebar)</i></p>
-                    : <ul>
+                    : <ol>
                         {items.map((item) => (
-                            <li key={items.indexOf(item)}>{item}</li>
+                            <li key={item}>
+                            <a href={getPageLink('NOTE-UNIT', {courseId: title.replace(' ', '_'), unit: item})}>
+                                {item}
+                            </a>
+                            </li>
                         ))}
-                    </ul>
+                    </ol>
                 }
             </div>
         }

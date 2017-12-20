@@ -4,9 +4,13 @@ const current = (state = {}, action) => {
             return {
                 ...state,
                 courseCode: action.courseCode,
-                units: action.units,
                 unit: action.unit,
                 onCourse: true
+            };
+        case 'SET_CURRENT_COURSE_UNITS':
+            return {
+                ...state,
+                units: action.units
             };
         case 'SET_CURRENT_UNIT':
             return {

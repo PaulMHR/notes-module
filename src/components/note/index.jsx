@@ -7,6 +7,9 @@ import NotesHeaderTitle from './note_header/NoteHeaderTitle';
 import NotesHeader from './note_header/index';
 import NotFoundPage from './NotFoundPage';
 
+import {setCurrentCourseUnits} from "../../actions/index";
+import {convertUnitIntoId} from "../../utils";
+
 import "../../common.css";
 
 const mapStateToProps = (state) => {
@@ -16,7 +19,7 @@ const mapStateToProps = (state) => {
 };
 
 class NoteIndex extends React.Component {
-    constructor({match, bingeMode}) {
+    constructor({match, bingeMode, dispatch}) {
         super();
         this.state = {
             subject: match.params.courseId.replace('_', ' '),
@@ -24,7 +27,8 @@ class NoteIndex extends React.Component {
             course_content_by_units: undefined,
             loading: true,
             found: false,
-            bingeMode: bingeMode
+            bingeMode: bingeMode,
+            dispatch: dispatch
         };
     }
 
@@ -41,6 +45,7 @@ class NoteIndex extends React.Component {
                         introduction : snapshot_val[snapshot_keys[i]]["introduction"],
                         course_content_by_units: snapshot_val[snapshot_keys[i]]["course_content_by_units"],
                         found: true});
+                    this.state.dispatch(setCurrentCourseUnits(this.getSortedKeys()));
                 }
             }
             this.setState({...this.state, loading: false});
@@ -90,8 +95,21 @@ class NoteIndex extends React.Component {
         );
     }
 
-    convertUnitIntoId(unitName) {
-        return unitName.replace(' ', '-').replace(/[?&]/, '').toLowerCase();
+    getSortedKeys() {
+        return this.state.course_content_by_units === undefined
+            ? []
+            : Object.keys(this.state.course_content_by_units)
+            .sort((a,b) => {
+                const a_int = parseInt(a.split(' ')[0], 10);
+                const b_int = parseInt(b.split(' ')[0], 10);
+                if (a_int < b_int) {
+                    return -1;
+                } else if (a_int > b_int) {
+                    return 1;
+                } else {
+                    return 0;
+                }
+            });
     }
 
     splitModeRender() {
@@ -122,20 +140,9 @@ class NoteIndex extends React.Component {
                 </div>
             );
         } else if (this.state.unit !== undefined) {
-            let sortedKeys = Object.keys(this.state.course_content_by_units)
-                .sort((a,b) => {
-                    const a_int = parseInt(a.split(' ')[0], 10);
-                    const b_int = parseInt(b.split(' ')[0], 10);
-                    if (a_int < b_int) {
-                        return -1;
-                    } else if (a_int > b_int) {
-                        return 1;
-                    } else {
-                        return 0;
-                    }
-                });
+            let sortedKeys = this.getSortedKeys();
             let keyIndex = sortedKeys
-                .map((key) => this.convertUnitIntoId(key))
+                .map((key) => convertUnitIntoId(key))
                 .indexOf(this.state.unit);
             return (
                 <div className="view_div">
