@@ -6,7 +6,6 @@ let getPageLink = (page, params = {}) => {
     let page_affix;
     switch(page) {
         case "NOTE-UNIT":
-            console.log(params);
             page_affix = (params.unit === "1 Introduction")
                 ? '/note/' + params.courseId
                 : '/note/' + params.courseId + '/u/' + convertUnitIntoId(params.unit);

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import getPageLink from '../../links';
+import {stripOfFirstNumber} from "../../utils";
 
 import './styles/Sidebar.css';
 
@@ -19,7 +20,7 @@ export default ({title, items, empty}) => (
                         {items.map((item) => (
                             <li key={item}>
                             <a href={getPageLink('NOTE-UNIT', {courseId: title.replace(' ', '_'), unit: item})}>
-                                {item}
+                                {stripOfFirstNumber(item)}
                             </a>
                             </li>
                         ))}
