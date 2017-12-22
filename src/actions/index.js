@@ -18,6 +18,15 @@ export const resetCurrentCourseAndUnit = () => ({
     type: 'RESET_CURRENT_COURSE_AND_UNIT'
 });
 
+export const setDisplaySidebar = (displaySidebar) => ({
+    type: 'SET_DISPLAY_SIDEBAR',
+    displaySidebar
+});
+
+export const resetDisplaySidebar = () => ({
+    type: 'RESET_DISPLAY_SIDEBAR'
+});
+
 export const setSearchTerm = (searchTerm) => ({
     type: 'SET_SEARCH_TERM',
     searchTerm

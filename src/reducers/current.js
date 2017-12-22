@@ -1,3 +1,5 @@
+import {defaultBingeMode} from "../defaults";
+
 const current = (state = {}, action) => {
     switch (action.type) {
         case 'SET_CURRENT_COURSE':
@@ -23,7 +25,28 @@ const current = (state = {}, action) => {
                 ...state,
                 courseCode: null,
                 unit: null,
+                units: null,
                 onCourse: false
+            };
+        case 'SET_BINGE_MODE':
+            return {
+                ...state,
+                bingeMode: action.bingeMode
+            };
+        case 'RESET_BINGE_MODE':
+            return {
+                ...state,
+                bingeMode: defaultBingeMode
+            };
+        case 'SET_DISPLAY_SIDEBAR':
+            return {
+                ...state,
+                displaySidebar: action.displaySidebar
+            };
+        case 'RESET_DISPLAY_SIDEBAR':
+            return {
+                ...state,
+                displaySidebar: !state.bingeMode && state.onCourse
             };
         default:
             return state;

@@ -1,4 +1,4 @@
-import {defaultFontSize, defaultBingeMode} from "../defaults";
+import {defaultFontSize} from "../defaults";
 
 const options = (state = {}, action) => {
     switch (action.type) {
@@ -11,16 +11,6 @@ const options = (state = {}, action) => {
             return {
                 ...state,
                 fontSize: defaultFontSize
-            };
-        case 'SET_BINGE_MODE':
-            return {
-                ...state,
-                bingeMode: action.bingeMode
-            };
-        case 'RESET_BINGE_MODE':
-            return {
-                ...state,
-                bingeMode: defaultBingeMode
             };
         default:
             return state;

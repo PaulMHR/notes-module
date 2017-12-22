@@ -7,14 +7,14 @@ import NotesHeaderTitle from './note_header/NoteHeaderTitle';
 import NotesHeader from './note_header/index';
 import NotFoundPage from './NotFoundPage';
 
-import {setCurrentCourseUnits} from "../../actions/index";
+import {setCurrentCourseUnits, setDisplaySidebar} from "../../actions/index";
 import {convertUnitIntoId} from "../../utils";
 
 import "../../common.css";
 
 const mapStateToProps = (state) => {
     return {
-        bingeMode: state.options.bingeMode
+        bingeMode: state.current.bingeMode
     }
 };
 
@@ -53,6 +53,7 @@ class NoteIndex extends React.Component {
     }
 
     bingeModeRender() {
+        this.state.dispatch(setDisplaySidebar(false));
         return (
             <div className="view_div">
                 {this.state.loading ?
@@ -113,6 +114,7 @@ class NoteIndex extends React.Component {
     }
 
     splitModeRender() {
+        this.state.dispatch(setDisplaySidebar(true));
         if (this.state.loading) {
             return (
                 <div className="view_div">

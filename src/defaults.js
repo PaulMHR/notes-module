@@ -1,10 +1,13 @@
 export const defaultFontSize = 'LARGE';
 export const defaultBingeMode = false;
+export const defaultOnCourse = false;
 
 const defaultOptions = {
     options: {
         fontSize: defaultFontSize,
-        bingeMode: defaultBingeMode
+        bingeMode: defaultBingeMode,
+        onCourse: defaultOnCourse,
+        displaySidebar: !defaultBingeMode && defaultOnCourse
     }
 };
 

@@ -6,7 +6,7 @@ import NotoriousRoute from './route';
 
 const mapStateToProps = (state) => {
     return {
-        displaySidebar: !state.options.bingeMode && state.current.onCourse
+        displaySidebar: state.current.displaySidebar
     }
 };
 

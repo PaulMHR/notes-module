@@ -9,13 +9,15 @@ import MainMenu from './components/main_menu/index';
 import About from './components/about/index';
 import Note from './components/note/index';
 
-import {setCurrentCourse,
+import {
+    setCurrentCourse,
     setCurrentUnit,
-    resetCurrentCourseAndUnit} from "./actions/index";
+    resetCurrentCourseAndUnit, setDisplaySidebar
+} from "./actions/index";
 
 const mapStateToProps = (state) => {
     return {
-        displaySidebar: !state.options.bingeMode && state.current.onCourse
+        displaySidebar: state.displaySidebar
     }
 };
 
@@ -32,8 +34,8 @@ const ReduxRoute = ({component: Component, path, onMatch, ...rest}) => (
 let router = ({displaySidebar, dispatch}) => (
     <Router>
         <div className="route_div">
-            <input id="slide-sidebar" type="checkbox" role="button" checked={!displaySidebar} />
-            <label><span>close</span></label>
+            <input id="slide-sidebar" type="checkbox" role="button" onChange={() => dispatch(setDisplaySidebar(!displaySidebar))} checked={displaySidebar} />
+            <label htmlFor="slide-sidebar"><span>close</span></label>
 
             <ReduxRoute exact={true} path="/" component={MainMenu}
                         onMatch={() => dispatch(resetCurrentCourseAndUnit())} />

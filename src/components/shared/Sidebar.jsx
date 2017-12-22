@@ -14,7 +14,7 @@ export default ({title, items, empty}) => (
                 <div className="sidebar-header-container">
                     <h1>{title}</h1>
                 </div>
-                {title === undefined || items === undefined
+                {title === undefined || items === undefined || items === null
                     ? <p><i>(No items in sidebar)</i></p>
                     : <ol>
                         {items.map((item) => (

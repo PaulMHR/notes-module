@@ -3,13 +3,13 @@
 }
 
 .view_div {
-    margin: 0 100px;
     padding: 10px 0;
     background-color: white;
 
     position: absolute;
     top: 46px;
     left: 25%;
+    overflow: hidden;
 }
 
 input#slide-sidebar:checked ~ .view_div {
