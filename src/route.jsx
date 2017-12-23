@@ -12,7 +12,7 @@ import Note from './components/note/index';
 import {
     setCurrentCourse,
     setCurrentUnit,
-    resetCurrentCourseAndUnit, setDisplaySidebar
+    resetCurrentCourseAndUnit
 } from "./actions/index";
 
 const mapStateToProps = (state) => {
@@ -34,8 +34,6 @@ const ReduxRoute = ({component: Component, path, onMatch, ...rest}) => (
 let router = ({displaySidebar, dispatch}) => (
     <Router>
         <div className="route_div">
-            <input id="slide-sidebar" type="checkbox" role="button" onChange={() => dispatch(setDisplaySidebar(!displaySidebar))} checked={displaySidebar} />
-            <label htmlFor="slide-sidebar"><span>close</span></label>
 
             <ReduxRoute exact={true} path="/" component={MainMenu}
                         onMatch={() => dispatch(resetCurrentCourseAndUnit())} />
